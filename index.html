@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
+ </head>
+ <style>
+    body {
+      font-family: 'Mulish', sans-serif;
+      background-color: black;
+      color: white;
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+    }
+
+    /* Rest of your existing CSS styles */
+
+    /* Style for the h5 element */
+    .h5 {
+      color: #F23580;
+      margin-left: 50%;
+      font-size: 32px;
+      padding-bottom: 46px;
+      position: relative;
+    }
+
+    /* Use ::before pseudo-element to add the border image as a background */
+    .h5::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -30px; /* Adjust this value to adjust the position of the border image */
+      width: 60px; /* Adjust the width of the border image */
+      height: 100%;
+     
+      background-size: cover;
+      background-repeat: no-repeat;
+      transform: translateY(-50%);
+      z-index: -1;
+    }
+  </style>
+
+<header class="top-bar">
+    <div class="container-fluid">       
+    <div class="top-bar-logo">
+      <img src="./Logo.gif" alt="Footer Logo">
+    </div>
+    </div>
+    <div class="container-fluid">
+        <div class="name"> 
+            <P1> Anika McPhee</P1>
+        </div>
+    </div>
+   
+    
+    <ul class="navigation-links">
+      <li><a href="#">Home</a></li>
+      <li><a class="nav-link-projects" href="#center-projects">Projects</a></li>
+      <li><a href="#about-section">About</a></li>
+      <li><a href="#resume-section">Resume</a></li>
+      <li><a href="#contact-section">Contact</a></li>
+    </ul>
+</header>
+
+  
+      
+<div class="hero">
+  <div class="hero-image">
+    <img src="./WRH.png" alt="Hero Image">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-heading">Hi, I'm Anika</h1>
+        <p class="hero-subheading">UX/UI Designer</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="center-image">
+    <img src="./Portfolio-center-image.png" alt="Large Image"> 
+  </div>
+
+  <div class="content-wrapper">
+    <div class="center-projects" id="projects">
+      <div class="projectsintro" style="position: relative;">
+        <h2>Projects</h2>
+      </div>
+  </div>
+</div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-6 px-0" style="border: 3px solid transparent; border-image: url('./Outlineboarder.png') 3 round;">
+        <!-- Column 1 Content -->
+        <img src="./boarder.png" style="width: 102%;">
+        <h2>Revitalizing Compassion </h2>
+        <img src="./RogerNeilson.png" style="width: 100%;">
+        <p2>  
+          <t1 style="font-size: 14px;">The project proposes the redesign of Roger Neilson House's webpage, a palliative care facility in Ottawa. User research, including interviews and surveys, was conducted to gather insights. Competitor analysis highlighted strengths in accessibility standards, but weaknesses were found in certain websites. Heuristic evaluation identified issues with images, contact information, page length, and font size. User perspectives, actions, feelings, and pain points were considered. The problem statement focused on saving user information to streamline the volunteer application process. Sketches were created, and the site map was adjusted to include an 'About Us' section. A UI style guide was developed based on user preferences. Next steps included incorporating features, adding a contact form, and improving accessibility.</t>
+        </p2>
+        <div class="button-container">
+          <a href="#" class="button">click here</a>
+        </div>
+      </div>
+
+      <div class="col-6 px-0" style="border: 3px solid transparent; border-image: url('./Outlineboarder.png') 3 round;">
+        <!-- Column 2 Content -->
+        <img src="./boarder.png" style="width: 102%;">
+        <h3>Transforming The Digital Frontier</h3>
+        <img src="./Governmentofinteriors.png" style="width: 100%;">
+        <p3>
+          <t2 style="font-size: 14px;">The non-profit organization's website faced issues with cluttered navigation, outdated information, and limited resource access. Steps taken to address the problem included a heuristic analysis and usability testing. Insights led to a redesign of the information architecture, improvements in the footer design, and the creation of mockups and a UI style guide. The resulting solution aimed to provide a clearer purpose, intuitive navigation, and easier access to resources. Future steps involve finalizing prototypes and perfecting the footer design.</t2>
+        </p3>
+
+        <div class="button-container">
+          <a href="#" class="button">click here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="center-content">
+ 
+      <div class="jewl-img">
+        <img src="./AdobeStock_570844739bbb 2 (1).png">
+     </div>
+      <div class="center-container">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 px-0" style="border: 3px solid transparent; border-image: url('./Outlineboarder.png') 3 round;">
+              <div class="smart-design">
+            <img src="./boarder.png" style="width: 102%;">
+            <h4> Designing Smart Receipes</h4>
+            <img src="./Homechef1mobile.png">
+            <p4>
+              <t4>
+                This case study addresses the problem of people struggling to find new and exciting recipes that cater to their food preferences. The proposed solution is an AI-powered mobile application that generates personalized recipes based on users' dietary preferences, available ingredients, and desired meal types. The app aims to provide a convenient and time-efficient way for users to discover and plan diverse and nutritious meals. By using the app, users can save time, broaden their culinary horizons, improve their nutrition knowledge, and efficiently organize their meal preparations. The focus is on creating a seamless and enjoyable user experience while helping users achieve their goals of learning new recipes, saving money on groceries, trying new dishes, and managing their time effectively.
+              </t4>
+            </p4>
+            <div class="button-container">
+              <a href="#" class="button">click here</a>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+   </div>
+  </div>
+
+   
+
+  <!-- Move this section after the center-container -->
+  <div class="arrow-container">
+    <img src="./Arrow-up.png" class="arrow-image">
+  </div>
+    
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="./ANIKA.png" class="img-fluid mb-3">
+      </div>
+      <div class="col-md-6" id="about-section">            
+        <div class="text-box">
+          <h2>About</h2>
+          <p>
+            What sets Anika apart is her unique background, characterized by their experience as a residential program manager for adults with developmental disabilities. This valuable experience has instilled in her a profound sense of empathy and a strong motivation to enhance usability and accessibility for all individuals. They firmly believe that technology possesses the power to bridge gaps and offer equitable opportunities, enabling marginalized voices to be heard. Fueled by this passion, her focus lies in creating designs that are not just visually appealing but also inclusive and accessible.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-2 order-md-2">
+      <div class="column-text">
+          <h3>User Research</h3>
+          <p>
+            Anika finds user research to be an exhilarating beginning to the creative process. Her typical approach involves conducting online surveys and synthesizing data.
+            Methodology:
+            Developing Research Plans
+            User Interview Scripts
+            Online interviews and surveys.
+          </p>
+      </div>
+    </div>
+    <div class="col-md-2 order-md-1">
+        <div class="column-text">
+          <h3>Qualitative Interviews</h3>
+          <p>
+            Understanding the user requires a deep understanding of their behaviors, and obtaining qualitative data is considered a best practice for achieving this. With over seven years of experience, they specialize in conducting behavior-based interviews to gain valuable insights into user motivations and actions.
+            Methodology:
+            Behavioral Based Interviews
+            Feedback Analysis
+          </p>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="column-text">
+          <h3>User Empathy</h3>
+          <p>
+            User empathy is her favorite aspect of the design process.
+            Methodology:
+            Proto-personas
+            User Insights
+            Problem Statements
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="resume-section" id="resume-section">
+        <div class="resume-title-wrapper">
+          <h5><t>Resume</t></h5>
+          <div class="image-section">
+            <img src="./resume.png" alt="Image">
+          </div>
+        </div>
+      
+   </div>
+        
+
+      <div class="contact-title-wrapper" id="contact-section">
+        <!-- Your contact section content goes here -->
+     
+      
+        <div class="contact-title-wrapper">
+        <h5><t>Contact</t></h5>
+          </div>
+        <form>
+        <div class="contact-title" style="font-size: 32px; color: #F23580;">
+      
+        <p> I'd love to share my work with you and answer any questions you may have. Leave your email and message and I'll get to you soon.</p>
+          </div>
+           <div class="mb-3">
+             <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+               </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Message</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+           <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+      </div>
+   
+      
+        <footer class="footer">
+          <div class="container">
+            <div class="footer-logo">
+              <img src="./IconOnly_Transparent_NoBuffer.png" alt="Footer Logo">
+            </div>
+            <ul class="footer-navigation">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Resume</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </footer>
+     
+        
+        <script>
+            $(document).ready(function() {
+              // Smooth scroll to top when the arrow image is clicked
+              $(".arrow-image").on("click", function() {
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+              });
+          
+              // Smooth scroll to projects section when "Projects" link is clicked
+              $("a.nav-link-projects").on("click", function(event) {
+                event.preventDefault();
+                const targetOffset = $(".projectsintro").offset().top;
+                $("html, body").animate({ scrollTop: targetOffset }, "slow");
+              });
+          
+              // Smooth scroll to about section when "About" link is clicked
+              $("a[href='#about-section']").on("click", function(event) {
+                event.preventDefault();
+                const targetOffset = $("#about-section").offset().top;
+                $("html, body").animate({ scrollTop: targetOffset }, "slow");
+              });
+          
+              // Smooth scroll to resume section when "Resume" link is clicked
+              $("a[href='#resume-section']").on("click", function(event) {
+                event.preventDefault();
+                const targetOffset = $("#resume-section").offset().top;
+                $("html, body").animate({ scrollTop: targetOffset }, "slow");
+              });
+          
+              // Smooth scroll to contact section when "Contact" link is clicked
+              $("a[href='#contact-section']").on("click", function(event) {
+                event.preventDefault();
+                const targetOffset = $("#contact-section").offset().top;
+                $("html, body").animate({ scrollTop: targetOffset }, "slow");
+              });
+            });
+          </script>
+</div>
+</html>
