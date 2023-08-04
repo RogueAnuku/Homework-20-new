@@ -16,7 +16,6 @@ body {
 }
 /* Top bar styles */
 
-
 /* Adjust the top-bar styles */
 .top-bar {
   background-color: black;
@@ -39,11 +38,8 @@ body {
   font-family: 'Mulish', sans-serif;
   font-size: 20px; /* Adjust the font size as needed */
   color: #F23580;
-  margin-left: -76%; /* Add a small margin to separate the logo and name slightly */
+  margin-left: -84%; /* Add a small margin to separate the logo and name slightly */
 }
-
-
-/* Other CSS rules above */
 
 .navigation-links {
   list-style: none;
@@ -64,7 +60,7 @@ body {
   transition: background-color 0.3s ease;
 }
 .navigation-links li {
-  margin-right: 48px;
+  margin-right: 5%;
   font-family: "mulish";
 }
 
@@ -78,7 +74,7 @@ body {
   color: #0ac7e7;
   position: absolute;
   font-size: 22px;
- 
+ margin-top: -22%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -247,7 +243,6 @@ font-size: 14px;}
 
 
 
-
 .left-image {border-radius: 13px;
   box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;
   width: 568px;
@@ -270,7 +265,6 @@ font-size: 14px;}
 
 
 
-
     /* padding-bottom: 10px; */
 .resume-section  {
 margin-bottom: 754px;
@@ -287,7 +281,6 @@ margin-top: 180px;
 }
 
 
-
 .h5 {
   color: #F23580;
   margin-left: 50%;
@@ -295,7 +288,6 @@ margin-top: 180px;
   padding-bottom: 46px;
   position: relative;
 }
-
 
 /* Use ::before pseudo-element to add the border image as a background */
 .h5::before {
@@ -416,11 +408,9 @@ form {
 
 
 
-
 @media (min-width: 800px) and (min-aspect-ratio: 1/1)  
 {
   /* Top bar styles */
-
 
 }
 
@@ -428,7 +418,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -100px;
+  margin-top: -22%;
   padding-top: 40px;
 }
 
@@ -437,7 +427,6 @@ form {
 }
 
 /* Rest of the styles for this media query... */
-
 
 
 
@@ -459,7 +448,6 @@ form {
   position:relative;
 }
 
-
 .goidesktop img {
      width: 50%;
 }
@@ -478,7 +466,6 @@ form {
   width: 100%
 
 }
-
 
 .grid-item-bottomcenter {
   width: 380px;
@@ -588,6 +575,10 @@ p[style="color: black;"] t[style="font-size: 14px;"] {
       align-items: center;
     }
     
+    .navigation-links li {
+      margin-right: 8px; 
+      font-family: "mulish";/* Adjust this value to change the spacing between the navigation links */
+    }
     
     .navigation-links a {
       color: white;
