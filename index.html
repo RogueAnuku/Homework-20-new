@@ -91,11 +91,9 @@
 
   <div class="content-wrapper">
     <div class="center-projects" id="projects">
-      <div class="projectsintro" style="position: relative;">
-        <h2>Projects</h2>
-      </div>
+     <h7>Projects</h7>
+     </div>
   </div>
-</div>
 
   <div class="container">
     <div class="row">
@@ -157,13 +155,6 @@
   </div>
 
    
-
-  <!-- Move this section after the center-container -->
-  <div class="arrow-container">
-    <img src="./Arrow-up.png" class="arrow-image">
-  </div>
-    
-  
   <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -253,58 +244,61 @@
     </form>
       </div>
    
-      
+      <div class="arrow-container">
+        <img src="./Arrow-up.png" class="arrow-image">
+      </div>
+        
         <footer class="footer">
           <div class="container">
-            <div class="footer-logo">
-              <img src="./IconOnly_Transparent_NoBuffer.png" alt="Footer Logo">
-            </div>
-            <ul class="footer-navigation">
+              <ul class="footer-navigation">
               <li><a href="#">Home</a></li>
               <li><a href="#">Projects</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Resume</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
+            <div class="footer-logo">
+              <img src="./IconOnly_Transparent_NoBuffer.png" alt="Footer Logo">
+            </div>
           </div>
         </footer>
      
         
         <script>
-            $(document).ready(function() {
-              // Smooth scroll to top when the arrow image is clicked
-              $(".arrow-image").on("click", function() {
-                $("html, body").animate({ scrollTop: 0 }, "slow");
-              });
-          
-              // Smooth scroll to projects section when "Projects" link is clicked
-              $("a.nav-link-projects").on("click", function(event) {
-                event.preventDefault();
-                const targetOffset = $(".projectsintro").offset().top;
-                $("html, body").animate({ scrollTop: targetOffset }, "slow");
-              });
-          
-              // Smooth scroll to about section when "About" link is clicked
-              $("a[href='#about-section']").on("click", function(event) {
-                event.preventDefault();
-                const targetOffset = $("#about-section").offset().top;
-                $("html, body").animate({ scrollTop: targetOffset }, "slow");
-              });
-          
-              // Smooth scroll to resume section when "Resume" link is clicked
-              $("a[href='#resume-section']").on("click", function(event) {
-                event.preventDefault();
-                const targetOffset = $("#resume-section").offset().top;
-                $("html, body").animate({ scrollTop: targetOffset }, "slow");
-              });
-          
-              // Smooth scroll to contact section when "Contact" link is clicked
-              $("a[href='#contact-section']").on("click", function(event) {
-                event.preventDefault();
-                const targetOffset = $("#contact-section").offset().top;
-                $("html, body").animate({ scrollTop: targetOffset }, "slow");
-              });
+          $(document).ready(function() {
+            // Smooth scroll to top when the arrow image is clicked
+            $(".arrow-image").on("click", function() {
+              $("html, body").animate({ scrollTop: 0 }, "slow");
             });
-          </script>
+        
+            // Smooth scroll to projects section when "Projects" link is clicked
+            $("a.nav-link-projects").on("click", function(event) {
+              event.preventDefault();
+              const targetOffset = $("#projects").offset().top; // Changed the target offset to the "projects" section
+              $("html, body").animate({ scrollTop: targetOffset }, "slow");
+            });
+        
+            // Smooth scroll to about section when "About" link is clicked
+            $("a[href='#about-section']").on("click", function(event) {
+              event.preventDefault();
+              const targetOffset = $("#about-section").offset().top;
+              $("html, body").animate({ scrollTop: targetOffset }, "slow");
+            });
+        
+            // Smooth scroll to resume section when "Resume" link is clicked
+            $("a[href='#resume-section']").on("click", function(event) {
+              event.preventDefault();
+              const targetOffset = $("#resume-section").offset().top;
+              $("html, body").animate({ scrollTop: targetOffset }, "slow");
+            });
+        
+            // Smooth scroll to contact section when "Contact" link is clicked
+            $("a[href='#contact-section']").on("click", function(event) {
+              event.preventDefault();
+              const targetOffset = $("#contact-section").offset().top;
+              $("html, body").animate({ scrollTop: targetOffset }, "slow");
+            });
+          });
+        </script>
 </div>
 </html>

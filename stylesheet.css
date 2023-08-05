@@ -10,11 +10,13 @@ body {
   margin-bottom: 0;
   margin-left: 0;
 }
-.h2, h2 {
-  color: #f23580;
-
+#projects.center-projects{
+  color: #F23580;
+  font-size: 200%;
+  text-align: center;
+  font-family: 'mulish';
 }
-/* Top bar styles */
+  
 
 /* Adjust the top-bar styles */
 .top-bar {
@@ -108,12 +110,7 @@ body {
   margin-top: 36px;
 }
 
-.projectsintro {
-  font-size: 32px;
-  color: #F23580;
 
-}
- 
  .text-box {
   width: 826px;
   background-color: white;
@@ -132,11 +129,26 @@ body {
     flex-wrap: wrap;
   }
 }
-
-.arrow-image {
-  width: 30px;
-  height: auto;
-}
+.arrow-container{ 
+  margin-left:86%;
+  margin-top: -10%;
+  }
+  .arrow-image {
+    width: 20%;
+    height: auto;
+    position: sticky;
+    /* margin-top: -145%; */
+    /* Set the default filter to make the image white */
+    filter: brightness(50%) sepia(100%) saturate(0%);
+    /* Add a transition to create a smooth animation */
+    transition: filter 0.3s ease;
+  }
+  
+  /* Add a hover rule to change the filter on hover */
+  .arrow-image:hover {
+    /* Set the filter to make the image pinkish */
+    filter: brightness(100%); /* Adjust the hue-rotate value to get the desired pinkish effect */
+  }
 .col-md-4 {
 -ms-flex: 0 0 33.333333%;
 flex: 0 0 33.333333%;
@@ -204,19 +216,16 @@ font-size: 14px;}
   padding: 20px;
   margin-bottom: 10%;
 }
-.jewl-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; /* Send it behind other content */
-}
 
 .jewl-img img {
+  position: absolute;
+  top: -200%;
+  left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  /* width: max-content; */
+  /* height: 242%; */
+  z-index: -1;
+
 }
 
 .center-content {
@@ -236,20 +245,11 @@ font-size: 14px;}
   color: #333; /* Replace with your desired text color */
  
 }
-.contact-title-wrapper {
-  margin-top: -232px;
-  margin-left: 75px;
-}
 
 
 
-.left-image {border-radius: 13px;
-  box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;
-  width: 568px;
-  
-  margin-left: 116px;
-}
-  
+
+
 
 /* Styles for the image box */
 
@@ -266,14 +266,7 @@ font-size: 14px;}
 
 
     /* padding-bottom: 10px; */
-.resume-section  {
-margin-bottom: 754px;
-margin-top: 180px;
-    /* background-color: #111; */
-    color: white;
-    position: relative;
-        padding: 0px;} 
-    /* background-color: #000; */
+
 
 /* Center the resume image horizontally */
 .image-section {
@@ -318,10 +311,11 @@ body {
 /* Apply general styles to the form and its elements */
 form {
   
-  padding: 38px; /* Add padding to provide some spacing around the form elements */
-  background-color: white; /* Set the background color of the form to white */
+  padding: 38px;
+  background-color: white;
   border-radius: 20px;
-  margin: 10%;
+  margin-left: 25%;
+  width: 50%;
 }
 
 .contact-title p{
@@ -382,6 +376,7 @@ form {
 }
 
 .footer .container {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -637,7 +632,6 @@ p[style="color: black;"] t[style="font-size: 14px;"] {
       font-size: 20px;
       font-weight: bold;
       color: #F23580; 
-      margin-top: -50px;
       margin-bottom: 80px;
       text-align: center;
  
@@ -646,8 +640,6 @@ p[style="color: black;"] t[style="font-size: 14px;"] {
       font-size: 20px;
       font-weight: bold;
      color: #F23580; 
-     margin-top: -50px;
-     margin-bottom: 80px;
      text-align: center;
 
     }
@@ -688,28 +680,29 @@ text-align: center;
    .col-md-6 {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
+  margin-left: -20%;
  }
 
   .col-md-6 img {
     width: 75%;
-    margin-left: -1%;}
+    margin-left: -44%;
+  border-radius: 4%;
+  box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;
+}
   
   /* Vertically align the columns with vertical sections */
   .row {    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     }
-.resume-section {
-  margin-bottom: 739px;
-    /* margin-top: 180px; */
-    background-color: transparent;
-    color: #E91E63;
-}
+
 
 .h5, h5 {
   text-align: center;
+  font-weight: bold;
+  font-size: 40px;
   color: #F23580;
-  margin-bottom: 5%;
+  margin-top: 5%;
 }
 .form {
   width: 70%;
@@ -720,19 +713,16 @@ text-align: center;
   margin: 5%}
 
   .contact-title-wrapper {
-  margin-top: -511px;}
+  }
   /* margin-left: 75px; */
-  .arrow-container {
-  position: sticky;
-  margin-left: 97%;
-  top: 892%;
-  justify-content: right;}
+ 
 
 .footer {
+  width: 100%;
   margin-top: 5%;
 }
 /* max-width: 50%; */
-}
+
 /* Media query for devices with a minimum width of 320px and minimum device width of 480px */
 @media (min-width: 320px) and (min-device-width: 480px) {
   /* Add your styles for this media query here */
