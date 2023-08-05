@@ -18,6 +18,7 @@
       margin-right: 0;
       margin-bottom: 0;
       margin-left: 0;
+      
     }
 
     /* Rest of your existing CSS styles */
@@ -69,9 +70,9 @@
     </ul>
 </header>
 
-  
+<div id="top-section">
       
-<div class="hero">
+  <div class="hero">
   <div class="hero-image">
     <img src="./WRH.png" alt="Hero Image">
     
@@ -83,8 +84,8 @@
     </div>
     </div>
   </div>
+  </div>
 </div>
-
   <div class="center-image">
     <img src="./Portfolio-center-image.png" alt="Large Image"> 
   </div>
@@ -248,20 +249,48 @@
         <img src="./Arrow-up.png" class="arrow-image">
       </div>
         
-        <footer class="footer">
-          <div class="container">
-              <ul class="footer-navigation">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Resume</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-            <div class="footer-logo">
-              <img src="./IconOnly_Transparent_NoBuffer.png" alt="Footer Logo">
-            </div>
+      <footer class="footer">
+        <div class="container">
+          <ul class="footer-navigation">
+            <li><a href="#top-section">Home</a></li> <!-- Update the "Home" link with the ID of the top section -->
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#resume-section">Resume</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+          </ul>
+          <div class="footer-logo">
+            <img src="./IconOnly_Transparent_NoBuffer.png" alt="Footer Logo">
           </div>
-        </footer>
+        </div>
+      </footer>
+    
+      <script>
+        $(document).ready(function() {
+          // Smooth scroll to top when the arrow image is clicked
+          $(".arrow-image").on("click", function() {
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+          });
+      
+          // Smooth scroll for all footer navigation links
+          $("footer a[href^='#']").on("click", function(event) {
+            event.preventDefault();
+            const target = $(this).attr("href");
+            if (target === "#top-section") {
+              $("html, body").animate({ scrollTop: 0 }, "slow"); // Scroll to top if "Home" link is clicked
+            } else {
+              const targetOffset = $(target).offset().top;
+              $("html, body").animate({ scrollTop: targetOffset }, "slow");
+            }
+          });
+        });
+      </script>
+      
+      
+      
+      
+      
+      
+      
      
         
         <script>
@@ -299,6 +328,13 @@
               $("html, body").animate({ scrollTop: targetOffset }, "slow");
             });
           });
+             // Smooth scroll for all footer navigation links
+    $("footer a[href^='#']").on("click", function(event) {
+      event.preventDefault();
+      const targetOffset = $(this.getAttribute("href")).offset().top;
+      $("html, body").animate({ scrollTop: targetOffset }, "slow");
+    });
+  
         </script>
 </div>
 </html>

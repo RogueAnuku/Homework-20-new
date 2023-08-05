@@ -2,13 +2,14 @@
   /* Add your styles for this media query here */
 
 body {
-  font-family: 'Mulish', sans-serif;
-  background-color: black;
-  color: white;
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
+     font-family: 'Mulish', sans-serif;
+    background-color: black;
+    color: white;                      
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative; /* Set body to relative position */
+}
 }
 #projects.center-projects{
   color: #F23580;
@@ -128,7 +129,7 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
-}
+
 .arrow-container{ 
   margin-left:86%;
   margin-top: -10%;
@@ -360,6 +361,7 @@ form {
   font-size: 16px; /* Adjust the font size of the button as needed */
   padding: 10px 20px; /* Adjust the padding of the button as needed */
   color: black; /* Set the text color to black */
+  background-color: #F23580;
 }
 
 #exampleInputPassword1.form-control {
@@ -367,24 +369,28 @@ form {
 }
 
 /* Footer styles */
-.footer {padding-top: 10px;
+.footer {
   width: 100%;
+  margin-top: 5%;
   background-color: #053b49;
   color: white;
   padding: 30px;
-  position: absolute;
+  position: absolute; /* Position the footer at the bottom of the viewport */
+  bottom: 1; /* Stick it to the bottom of the viewport */
+  list-style: none;
 }
 
-.footer .container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
+
+/* Add appropriate padding to create space between footer and content above it */
+
+
 
 .footer-logo img {
-  width: 70px; /* Adjust the width as needed */
+  width: 70px;
   height: auto;
+  margin-top: -17%;
+  margin-left: 90%;
 }
 
 .footer-navigation {
@@ -398,10 +404,14 @@ form {
   font-weight: 500;
 }
 
+.footer-navigation li a {
+  color: white; /* Set the default text color to white */
+  transition: color 0.3s ease; /* Add a transition for smooth animation */
+}
 
-
-
-
+.footer-navigation li a:hover {
+  color: #F23580; /* Change the text color to #F23580 on hover */
+}
 
 @media (min-width: 800px) and (min-aspect-ratio: 1/1)  
 {
@@ -717,10 +727,7 @@ text-align: center;
   /* margin-left: 75px; */
  
 
-.footer {
-  width: 100%;
-  margin-top: 5%;
-}
+
 /* max-width: 50%; */
 
 /* Media query for devices with a minimum width of 320px and minimum device width of 480px */
