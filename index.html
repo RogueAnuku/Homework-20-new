@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <title>My Portfolio</title>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
  </head>
  <style>
     body {
@@ -48,7 +48,7 @@
     }
   </style>
 
-<header class="top-bar">
+  <header class="top-bar">
     <div class="container-fluid">       
     <div class="top-bar-logo">
       <img src="./Logo.gif" alt="Footer Logo">
@@ -107,8 +107,16 @@
           <t1 style="font-size: 14px;">The project proposes the redesign of Roger Neilson House's webpage, a palliative care facility in Ottawa. User research, including interviews and surveys, was conducted to gather insights. Competitor analysis highlighted strengths in accessibility standards, but weaknesses were found in certain websites. Heuristic evaluation identified issues with images, contact information, page length, and font size. User perspectives, actions, feelings, and pain points were considered. The problem statement focused on saving user information to streamline the volunteer application process. Sketches were created, and the site map was adjusted to include an 'About Us' section. A UI style guide was developed based on user preferences. Next steps included incorporating features, adding a contact form, and improving accessibility.</t>
         </p2>
         <div class="button-container">
-          <a href="#" class="button">click here</a>
+          <a href="https://rogueanuku.github.io/hmw_20_jumbotron/" target="_blank" class="button revitalizing-button">
+            test
+          </a>
         </div>
+       
+        
+        
+        
+        
+          </div>
       </div>
 
       <div class="col-6 px-0" style="border: 3px solid transparent; border-image: url('./Outlineboarder.png') 3 round;">
@@ -263,78 +271,37 @@
           </div>
         </div>
       </footer>
-    
-      <script>
-        $(document).ready(function() {
-          // Smooth scroll to top when the arrow image is clicked
-          $(".arrow-image").on("click", function() {
-            $("html, body").animate({ scrollTop: 0 }, "slow");
-          });
-      
-          // Smooth scroll for all footer navigation links
-          $("footer a[href^='#']").on("click", function(event) {
-            event.preventDefault();
-            const target = $(this).attr("href");
-            if (target === "#top-section") {
-              $("html, body").animate({ scrollTop: 0 }, "slow"); // Scroll to top if "Home" link is clicked
-            } else {
-              const targetOffset = $(target).offset().top;
-              $("html, body").animate({ scrollTop: targetOffset }, "slow");
-            }
-          });
-        });
-      </script>
-      
-      
-      
-      
-      
-      
-      
-     
+           
+         
         
-        <script>
+             
+       <script>
           $(document).ready(function() {
             // Smooth scroll to top when the arrow image is clicked
             $(".arrow-image").on("click", function() {
               $("html, body").animate({ scrollTop: 0 }, "slow");
             });
-        
+      
             // Smooth scroll to projects section when "Projects" link is clicked
             $("a.nav-link-projects").on("click", function(event) {
               event.preventDefault();
-              const targetOffset = $("#projects").offset().top; // Changed the target offset to the "projects" section
+              const targetOffset = $("#projects").offset().top;
               $("html, body").animate({ scrollTop: targetOffset }, "slow");
             });
-        
-            // Smooth scroll to about section when "About" link is clicked
-            $("a[href='#about-section']").on("click", function(event) {
+      
+            // Smooth scroll for all footer navigation links
+            $("footer a[href^='#']").on("click", function(event) {
               event.preventDefault();
-              const targetOffset = $("#about-section").offset().top;
+              const targetOffset = $(this.getAttribute("href")).offset().top;
               $("html, body").animate({ scrollTop: targetOffset }, "slow");
             });
-        
-            // Smooth scroll to resume section when "Resume" link is clicked
-            $("a[href='#resume-section']").on("click", function(event) {
-              event.preventDefault();
-              const targetOffset = $("#resume-section").offset().top;
-              $("html, body").animate({ scrollTop: targetOffset }, "slow");
-            });
-        
-            // Smooth scroll to contact section when "Contact" link is clicked
-            $("a[href='#contact-section']").on("click", function(event) {
-              event.preventDefault();
-              const targetOffset = $("#contact-section").offset().top;
-              $("html, body").animate({ scrollTop: targetOffset }, "slow");
+      
+            // Handle click event for the "Revitalizing Compassion" button
+            $(".revitalizing-button").on("click", function(event) {
+              event.preventDefault(); // Prevent the default link behavior
+              window.open("https://rogueanuku.github.io/hmw_20_jumbotron/", "_blank"); // Open the link in a new tab
             });
           });
-             // Smooth scroll for all footer navigation links
-    $("footer a[href^='#']").on("click", function(event) {
-      event.preventDefault();
-      const targetOffset = $(this.getAttribute("href")).offset().top;
-      $("html, body").animate({ scrollTop: targetOffset }, "slow");
-    });
-  
         </script>
-</div>
+  </body>
 </html>
