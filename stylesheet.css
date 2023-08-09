@@ -233,6 +233,37 @@ font-size: 14px;}
   padding: 20px;
   margin-bottom: 10%;
 }
+.liquid-loader {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 2px solid transparent;
+  border-top-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0.2;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+.revitalizing-button.loading .liquid-loader {
+  display: block;
+  position: relative;
+  margin-left: 8px;
+  width: 18px;
+  height: 18px;
+  border-width: 2px;
+  animation: none; /* Stop the spin animation */
+}
 
 .jewl-img img {
   position: absolute;
