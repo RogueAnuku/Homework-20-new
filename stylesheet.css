@@ -39,8 +39,8 @@ body {
 
 .name {
   font-family: 'Mulish', sans-serif;
-  font-size: 20px; /* Adjust the font size as needed */
-  color: #3567f2;
+  font-size: 1.25rem; /* Adjust the font size as needed */
+  color: #f23580;
   margin-left: -84%; /* Add a small margin to separate the logo and name slightly */
 }
 
@@ -70,49 +70,70 @@ body {
 .navigation-links a:hover {
   background-color: #f23580;
   box-shadow:  0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;}
-
-  .hero-heading {
-    font-size: 3.25rem;
-    color: white;
-    line-height: 2;
+  .hero-content {
+    text-align: center;
+    color: #0ac7e7;
+    position: absolute;
+    font-size: 1.0rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  .h1,h1 {
+    color: #f5f5f5;
+  }
+  .hero-image {
+    margin-top: -2S%;
+    position: relative;
+    width: 100%;
+  
+    /* padding-top: 56.25%; */
 }
   
-.h1, h1 {
-  font-size: 3rem;
-  line-height: 3;
-}
-.hero-content {
- 
-  text-align: center;
-  color: #0ac7e7;
-  position: absolute;
-  font-size: 22px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-.hero-image img {
-  position: absolute;
-  top: -2%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  object-fit: cover;
-}
-
-
-
-
- .text-box {
-  width: 826px;
-  background-color: white;
-  color: black;
-  margin-left: 20px;
-  padding: 20px; 
-  border-radius: 13px;
-  margin-bottom: 20px
-}
+  /* Remove the previous styling for .center-image */
+  .center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; /* Adjust this margin as needed */
+  }
+  
+  /* Adjust the styling for the center projects title */
+  .center-projects {
+    color: #F23580;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'mulish';
+    margin-top: 20px; /* Add some margin to separate from the hero image */
+  }
+  
+  /* Add a specific class for the container of the center content */
+  .center-content-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Adjust the styling for the center content heading */
+  .center-content h4 {
+    font-size: 1.5rem;
+    color: #F23580;
+  }
+  
+  /* Adjust the styling for the text box in center content */
+  .text-box {
+    background-color: white;
+    color: black;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left; /* Adjust the text alignment as needed */
+  }
+  
+  /* Add some margin to the form to separate it from the center content */
+  form {
+    margin-top: 20px;
+  }
 
   /* position: relative; */
   /* width: 100%; */
@@ -418,7 +439,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -22%;
+  margin-top: -10%;
   padding-top: 40px;
 }
 
@@ -531,12 +552,7 @@ p[style="color: black;"] t[style="font-size: 14px;"] {
   .button:hover {
     background-color: #f54d8d;
   }
-  .hero-image {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-top: 56.25%; /* 16:9 aspect ratio (height/width) */
-  }
+
 
   
   /* Additional styles for laptops with a screen size of 960x540 and above */
@@ -559,12 +575,7 @@ p[style="color: black;"] t[style="font-size: 14px;"] {
     }
     
     
-    .name {
-      font-family: 'Mulish', sans-serif;
-      font-size: 1.0rem; /* Adjust the font size as needed */
-      color: #F23580;
-      margin-left: -76%; /* Add a small margin to separate the logo and name slightly */
-    }
+    
     
     /* Navigation links styles */
     .navigation-links {
@@ -610,7 +621,6 @@ p[style="color: black;"] t[style="font-size: 14px;"] {
       color: #0ac7e7;
       position: absolute;
       font-size: 1.0rem;
-      margin-top: -22%;
       left: 50%;
       transform: translate(-50%, -260%);
       z-index: 1;

@@ -72,20 +72,13 @@
     </ul>
 </header>
 
-<div id="top-section">
-  <div class="hero">
-    <div class="container-fluid">
-      <div class="hero-image">
-        <img src="./WRH.png" alt="Hero Image">
-      </div>
-   
-        <div class="hero-heading">
-          <h1>Hi, I'm Anika</h1>
-        </div>
-        <div class="sub-heading">
-          <t1>UX/UI Designer</t1>
-        </div>
-</div>    
+<div class="hero-image">
+  <img src="./WRH.png" alt="Hero Image" style="width: 100%;">
+  <div class="hero-content">
+    <h1>Hi, I'm Anika</h1>
+    <t1>UX/UI Designer</t1>
+  </div>
+</div>
     
  
 <body>
@@ -261,38 +254,34 @@
             <img src="./IconOnly_Transparent_NoBuffer.png" alt="Footer Logo">
           </div>
         </div>
-      </footer>
-           
-         
-        
-             
-       <script>
-          $(document).ready(function() {
-            // Smooth scroll to top when the arrow image is clicked
-            $(".arrow-image").on("click", function() {
-              $("html, body").animate({ scrollTop: 0 }, "slow");
-            });
-      
-            // Smooth scroll to projects section when "Projects" link is clicked
-            $("a.nav-link-projects").on("click", function(event) {
-              event.preventDefault();
-              const targetOffset = $("#projects").offset().top;
-              $("html, body").animate({ scrollTop: targetOffset }, "slow");
-            });
-      
-            // Smooth scroll for all footer navigation links
-            $("footer a[href^='#']").on("click", function(event) {
-              event.preventDefault();
-              const targetOffset = $(this.getAttribute("href")).offset().top;
-              $("html, body").animate({ scrollTop: targetOffset }, "slow");
-            });
-      
-            // Handle click event for the "Revitalizing Compassion" button
-            $(".revitalizing-button").on("click", function(event) {
-              event.preventDefault(); // Prevent the default link behavior
-              window.open("https://rogueanuku.github.io/hmw_20_jumbotron/", "_blank"); // Open the link in a new tab
-            });
-          });
-        </script>
-  </body>
+      </footer>                    
+     </body>
+     <script>
+      $(document).ready(function() {
+        // Smooth scroll to top when the arrow image is clicked
+        $(".arrow-image").on("click", function() {
+          $("html, body").animate({ scrollTop: 0 }, "slow");
+        });
+  
+        // Smooth scroll to projects section when "Projects" link is clicked
+        $("a.nav-link-projects").on("click", function(event) {
+          event.preventDefault();
+          const targetOffset = $("#projects").offset().top;
+          $("html, body").animate({ scrollTop: targetOffset }, "slow");
+        });
+  
+        // Smooth scroll for all footer navigation links
+        $("footer a[href^='#']").on("click", function(event) {
+          event.preventDefault();
+          const targetOffset = $(this.getAttribute("href")).offset().top;
+          $("html, body").animate({ scrollTop: targetOffset }, "slow");
+        });
+  
+        // Handle click event for the "Revitalizing Compassion" button
+        $(".revitalizing-button").on("click", function(event) {
+          event.preventDefault(); // Prevent the default link behavior
+          window.open("https://rogueanuku.github.io/hmw_20_jumbotron/", "_blank"); // Open the link in a new tab
+        });
+      });
+    </script>  
 </html>
