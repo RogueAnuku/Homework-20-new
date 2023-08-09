@@ -40,7 +40,7 @@ body {
 .name {
   font-family: 'Mulish', sans-serif;
   font-size: 20px; /* Adjust the font size as needed */
-  color: #F23580;
+  color: #3567f2;
   margin-left: -84%; /* Add a small margin to separate the logo and name slightly */
 }
 
@@ -77,7 +77,7 @@ body {
     line-height: 2;
 }
   
-h1, h1 {
+.h1, h1 {
   font-size: 3rem;
   line-height: 3;
 }
@@ -604,6 +604,7 @@ p[style="color: black;"] t[style="font-size: 14px;"] {
     line-height: 0;
     /* margin-bottom: -15px; */
     margin-top:0;}
+
     .hero-content {
       text-align: center;
       color: #0ac7e7;
