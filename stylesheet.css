@@ -11,12 +11,7 @@ body {
   position: relative; /* Set body to relative position */
 }
 }
-#projects.center-projects{
-  color: #F23580;
-  font-size: 200%;
-  text-align: center;
-  font-family: 'mulish';
-}
+
   
 
 /* Adjust the top-bar styles */
@@ -100,13 +95,7 @@ body {
   }
   
   /* Adjust the styling for the center projects title */
-  .center-projects {
-    color: #F23580;
-    font-size: 2.5rem;
-    text-align: center;
-    font-family: 'mulish';
-    margin-top: 20px; /* Add some margin to separate from the hero image */
-  }
+ 
   
   /* Add a specific class for the container of the center content */
   .center-content-container {
@@ -141,8 +130,9 @@ body {
   .row {
     display: flex;
     flex-wrap: wrap;
-  }
-
+    justify-content: center;
+    width: 113%;
+}
 .arrow-container{ 
   margin-left:86%;
   margin-top: -10%;
@@ -171,7 +161,7 @@ max-width: 28.333333%;
 background-color: white;
 color: black;
 padding: 19px;
-margin-left: 34px;
+
 border-radius: 13px;}
 .pl-0, .px-0 {
   /* padding-left: 0!important; */
@@ -194,10 +184,7 @@ h4 {padding: 5%;
   color:#000
 }
 
-.t2 {
-margin-right: 5%;
-margin-left: 5%;
-font-size: 14px;}
+
 
 .button-container {
   display: flex;
@@ -233,37 +220,7 @@ font-size: 14px;}
   padding: 20px;
   margin-bottom: 10%;
 }
-.liquid-loader {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border: 2px solid transparent;
-  border-top-color: rgb(0, 0, 0);
-  border-radius: 50%;
-  animation: spin 1s infinite linear;
-  display: none;
-}
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-    opacity: 0.2;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 1;
-  }
-}
-
-.revitalizing-button.loading .liquid-loader {
-  display: block;
-  position: relative;
-  margin-left: 8px;
-  width: 18px;
-  height: 18px;
-  border-width: 2px;
-  animation: none; /* Stop the spin animation */
-}
 
 .jewl-img img {
   position: absolute;
@@ -289,9 +246,11 @@ font-size: 14px;}
 }
 
 .smart-design {
-  background-color: #f5f5f5; /* Replace with your desired background color */
-  color: #333; /* Replace with your desired text color */
- 
+  background-color: #FFF;
+  color: #333;
+  font-size: 1rem;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 
@@ -347,6 +306,12 @@ font-size: 14px;}
 
 .h6, h6 {
   margin-top: -10px; color: #F23580; font-size: 38px;
+}
+
+.h7 {
+  color:#F23580;
+  font-size: 2rem;
+
 }
 /* Rest of your CSS code... */
 
@@ -470,7 +435,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -10%;
+  margin-top: -12%;
   padding-top: 40px;
 }
 
@@ -661,10 +626,7 @@ p[style="color: black;"] t[style="font-size: 14px;"] {
       float: left;
     }
     
-    .content-wrapper {
-      margin-bottom: 5%;
-      font-size: 1.0rem;
-    }
+   
 
     #about-image {
       width: 288px;
@@ -681,22 +643,24 @@ p[style="color: black;"] t[style="font-size: 14px;"] {
        margin-bottom: 20px;
        
         padding: 4%;
-        width: 133%;
+        width: 100%;
     }
 
     .h2, h2{
-      font-size: 20px;
-      font-weight: bold;
+     
       color: #F23580; 
-      margin-bottom: 80px;
       text-align: center;
+      padding-top: 4%;
+      padding-bottom: 4%;
  
     }
     .h3,h3 {
-      font-size: 20px;
-      font-weight: bold;
+     
+     
      color: #F23580; 
      text-align: center;
+     padding-top: 4%;
+     padding-bottom: 4%;
 
     }
   .center-content h4 {
@@ -704,11 +668,8 @@ p[style="color: black;"] t[style="font-size: 14px;"] {
     text-align: center;
     color: #F23580;
   }
-.smart-design {
-  background-color: #f5f5f5;
-  color: #333;
-  font-size: 14px;
-}
+
+
 .smart-design img{
   width: 100%;
 }
@@ -736,19 +697,22 @@ text-align: center;
    .col-md-6 {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
-  margin-left: -20%;
+ 
  }
+ .col-6 {
+  color: black;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  background-color: white;
+}
 
   .col-md-6 img {   
   border-radius: 4%;
   box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;
 }
   
-  /* Vertically align the columns with vertical sections */
-  .row {    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    }
+
 
 
 .h5, h5 {
