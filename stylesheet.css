@@ -1,543 +1,6 @@
-@media (min-width: 768px) and (min-device-width: 1024px) {
+@media (min-width: 320px) and (min-device-width: 480px) {
   /* Add your styles for this media query here */
-
-body {
-     font-family: 'Mulish', sans-serif;
-    background-color: black;
-    color: white;                      
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  position: relative; /* Set body to relative position */
 }
-}
-
-  
-
-/* Adjust the top-bar styles */
-.top-bar {
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.top-bar-logo img{
-  width: 15%;
-}
-
-.name {
-  font-family: 'Mulish', sans-serif;
-  font-size: 1.25rem; /* Adjust the font size as needed */
-  color: #f23580;
-  margin-left: -84%; /* Add a small margin to separate the logo and name slightly */
-}
-
-.navigation-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-}
-
-.navigation-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 600;
-  padding: 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-.navigation-links li {
-  margin-right: 5%;
-  font-family: "mulish";
-}
-
-.navigation-links a:hover {
-  background-color: #f23580;
-  box-shadow:  0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;}
-  .hero-content {
-    text-align: center;
-    color: #0ac7e7;
-    position: absolute;
-    font-size: 1.0rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-  }
-  .h1,h1 {
-    color: #f5f5f5;
-  }
-  .hero-image {
-    margin-top: -2S%;
-    position: relative;
-    width: 100%;
-  
-    /* padding-top: 56.25%; */
-}
-  
-  /* Remove the previous styling for .center-image */
-  .center-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px; /* Adjust this margin as needed */
-  }
-  
-  /* Adjust the styling for the center projects title */
- 
-  
-  /* Add a specific class for the container of the center content */
-  .center-content-container {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Adjust the styling for the center content heading */
-  .center-content h4 {
-    font-size: 1.5rem;
-    color: #F23580;
-  }
-  
-  /* Adjust the styling for the text box in center content */
-  .text-box {
-    background-color: white;
-    color: black;
-    border-radius: 16px;
-    padding: 20px;
-    margin-bottom: 20px;
-    text-align: left; /* Adjust the text alignment as needed */
-  }
-  
-  /* Add some margin to the form to separate it from the center content */
-  form {
-    margin-top: 20px;
-  }
-
-  /* position: relative; */
-  /* width: 100%; */
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 113%;
-}
-.arrow-container{ 
-  margin-left:86%;
-  margin-top: -10%;
-  }
-  .arrow-image {
-    width: 20%;
-    height: auto;
-    position: sticky;
-    /* margin-top: -145%; */
-    /* Set the default filter to make the image white */
-    filter: brightness(50%) sepia(100%) saturate(0%);
-    /* Add a transition to create a smooth animation */
-    transition: filter 0.3s ease;
-  }
-  
-  /* Add a hover rule to change the filter on hover */
-  .arrow-image:hover {
-    /* Set the filter to make the image pinkish */
-    filter: brightness(100%); /* Adjust the hue-rotate value to get the desired pinkish effect */
-  }
-.col-md-4 {
--ms-flex: 0 0 33.333333%;
-flex: 0 0 33.333333%;
-max-width: 28.333333%;
-/* margin-bottom: 10%; */
-background-color: white;
-color: black;
-padding: 19px;
-
-border-radius: 13px;}
-.pl-0, .px-0 {
-  /* padding-left: 0!important; */
-}
-
-.center-image img{
-  z-index: 1; 
-margin-top: -100px;
-margin-bottom: 10px
-;}
-
-/* Your existing CSS code here */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 10%;
-}
-
-h4 {padding: 5%;
-  color:#000
-}
-
-
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  padding: 5%;
-}
-
-.button {
-  display: inline-flex;
-  padding: 15.5px 24px 15.5px 28px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  padding: 5%;
-  background-color: #f23580;
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color:#00bff0;
-}
-
-.center-content{
-  align-items: flex-start; /* Align items to the top of the container */
-  padding: 20px;
-  margin-bottom: 10%;
-  border-radius: 1%;
-}
-
-
-.jewl-img img {
-  position: absolute;
-  top: -200%;
-  left: 0;
-  width: 100%;
-  /* width: max-content; */
-  /* height: 242%; */
-  z-index: -1;
-
-}
-
-.center-content {
-  align-items: flex-start; /* Align items to the top of the container */
-  padding: 20px;
-  margin-bottom: 10%;
-  position: relative;
-}
-
-.center-content h4 {
-  font-size: 38px;
-  color: #F23580;
-}
-
-.smart-design {
-  background-color: #FFF;
-  color: #333;
-
-  margin-left: 4%;
-  margin-right: 4%;
-}
-
-
-
-
-
-
-/* Styles for the image box */
-
-/* Styles for the flexbox */
-.image-wrapper {
- 
-  width: 40%;
-  float: left;
-  margin-right: 30px; /* Add some spacing between the image and the grid */
-}
-
-/* Style for the image */
-
-
-
-    /* padding-bottom: 10px; */
-
-
-/* Center the resume image horizontally */
-.image-section {
-  text-align: center;
-}
-
-
-.h5 {
-  color: #F23580;
-  margin-left: 50%;
-  font-size: 32px;
-  padding-bottom: 46px;
-  position: relative;
-}
-
-/* Use ::before pseudo-element to add the border image as a background */
-.h5::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -30px; /* Adjust this value to adjust the position of the border image */
-  width: 60px; /* Adjust the width of the border image */
-  height: 100%;
- 
-  background-size: cover;
-  background-repeat: no-repeat;
-  transform: translateY(-50%);
-  z-index: -1;
-}
-
-.h6, h6 {
-  margin-top: -10px; color: #F23580; font-size: 38px;
-}
-
-.h7 {
-  color:#F23580;
-  font-size: 2rem;
-
-}
-/* Rest of your CSS code... */
-
-/* Apply general styles to the form and its elements */
-body {
-  background-color: white;
-  color: black; /* Set the text color to black */
-}
-
-/* Apply general styles to the form and its elements */
-form {
-  
-  padding: 38px;
-  background-color: white;
-  border-radius: 20px;
-  margin-left: 25%;
-  width: 50%;
-}
-
-.contact-title p{
-  color: #00BFF0;
-  font-family: Mulish;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  padding: 10px;
-  margin-left: -10px;
-  /* line-height: 53px; */
-}
-
-/* Adjust the size of the input fields */
-.form-control {
-  width: 100%; /* Set the input fields to take up 100% of the available width */
-  padding: 10px; /* Adjust the padding as needed */
-  color: black; /* Set the text color to black */
-}
-
-/* Adjust the size of the labels */
-.form-label {
-  font-size: 16px; /* Adjust the font size as needed */
-  color: black; /* Set the text color to black */
-}
-
-/* Adjust the size of the checkbox input */
-.form-check-input {
-  width: 20px; /* Adjust the width of the checkbox as needed */
-  height: 20px; /* Adjust the height of the checkbox as needed */
-  color: black; /* Set the text color to black */
-}
-
-/* Adjust the size of the checkbox label */
-.form-check-label {
-  font-size: 14px; /* Adjust the font size of the checkbox label as needed */
-  color: black; /* Set the text color to black */
-}
-
-/* Adjust the size of the submit button */
-.btn-primary {
-  font-size: 16px; /* Adjust the font size of the button as needed */
-  padding: 10px 20px; /* Adjust the padding of the button as needed */
-  color: black; /* Set the text color to black */
-  background-color: #F23580;
-}
-
-#exampleInputPassword1.form-control {
-  height: 160px;
-}
-
-/* Footer styles */
-.footer {
-  width: 100%;
-  margin-top: 5%;
-  background-color: #053b49;
-  color: white;
-  padding: 30px;
-  position: absolute; /* Position the footer at the bottom of the viewport */
-  bottom: 1; /* Stick it to the bottom of the viewport */
-  list-style: none;
-}
-
-
-
-/* Add appropriate padding to create space between footer and content above it */
-
-
-
-.footer-logo img {
-  width: 70px;
-  height: auto;
-  margin-top: -17%;
-  margin-left: 90%;
-}
-
-.footer-navigation {
-  list-style: none;
-}
-
-.footer-navigation a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.footer-navigation li a {
-  color: white; /* Set the default text color to white */
-  transition: color 0.3s ease; /* Add a transition for smooth animation */
-}
-
-.footer-navigation li a:hover {
-  color: #F23580; /* Change the text color to #F23580 on hover */
-}
-
-@media (min-width: 800px) and (min-aspect-ratio: 1/1)  
-{
-  /* Top bar styles */
-
-}
-
-.center-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -12%;
-  padding-top: 40px;
-}
-
-.center-image img {
-  width: 92%; /* Adjust the size as per your requirement */
-}
-
-/* Rest of the styles for this media query... */
-
-
-
-.boarder-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; /* Send it behind other content */
-}
-
-.grid-item-topleft {
-  grid-column: 1;
-  border: 3px solid transparent;
-  border-image: url('./Outlineboarder.png') 3 round;
-  padding: 20px;
-  font-size: 14px;
-  position:relative;
-}
-
-.goidesktop img {
-     width: 50%;
-}
-  
-.grid-item-topright {
-  
-  grid-column: 2/ span 2;
-  border: 3px solid transparent;
-  border-image: url('./Outlineboarder.png') 3 round;
-  padding: 20px;
-   font-size: 14px;
-  margin-left: 22px;
-  position: relative;
-}
-.grid-item-topright img {
-  width: 100%
-
-}
-
-.grid-item-bottomcenter {
-  width: 380px;
-margin-left: 25%;
-margin-top: 100px;
-  grid-column: 1 / span 3;
-  border: 3px solid transparent;
-  border-image: url('./Outlineboarder.png') 3 round;
-  padding: 20px;
-  font-size: 14px;
-  position:relative;
-  background-color: #FFF;
-  color: #000;
-}
-.grid-item-bottomcenter img {
-  width:100%;
- 
-}
-
-/* Additional styling for grid titles */
-.grid-title {
-  color: #f23580;
-  font-size: 18px;
-  text-align: center;
-  padding-bottom: 50px;
-  }
-
-
-  .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-  }
-  
-  .button {
-    display: inline-flex;
-    padding: 15.5px 24px 15.5px 28px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    background-color: #ff70a9;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-  }
-  
-  .button:hover {
-    background-color: #f54d8d;
-  }
 
 
   
@@ -766,4 +229,443 @@ text-align: center;
 /* Media query for devices with a minimum width of 320px and minimum device width of 480px */
 @media (min-width: 320px) and (min-device-width: 480px) {
   /* Add your styles for this media query here */
+}
+@media (min-width: 768px) and (min-device-width: 1024px) {
+  /* Add your styles for this media query here */
+
+body {
+     font-family: 'Mulish', sans-serif;
+    background-color: black;
+    color: white;                      
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative; /* Set body to relative position */
+}
+}
+
+  
+
+/* Adjust the top-bar styles */
+.top-bar {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.top-bar-logo img{
+  width: 15%;
+}
+
+.name {
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.25rem; /* Adjust the font size as needed */
+  color: #f23580;
+  margin-left: -84%; /* Add a small margin to separate the logo and name slightly */
+}
+
+.navigation-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.navigation-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.navigation-links li {
+  margin-right: 5%;
+  font-family: "mulish";
+}
+
+.navigation-links a:hover {
+  background-color: #f23580;
+  box-shadow:  0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;}
+  .hero-content {
+    text-align: center;
+    color: #0ac7e7;
+    position: absolute;
+    font-size: 1.0rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  .h1,h1 {
+    color: #f5f5f5;
+  }
+  .hero-image {
+    margin-top: -2S%;
+    position: relative;
+    width: 100%;
+  
+    /* padding-top: 56.25%; */
+}
+  
+  /* Remove the previous styling for .center-image */
+  .center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     /* Adjust this margin as needed */
+  }
+  
+  /* Adjust the styling for the center projects title */
+  .hero-content {
+    text-align: center;
+    color: #0ac7e7;
+    position: absolute;
+    font-size: 1.0rem;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+  
+  /* Add a specific class for the container of the center content */
+  .center-content-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Adjust the styling for the center content heading */
+  .center-content h4 {
+    font-size: 1.5rem;
+    color: #F23580;
+  }
+  
+  /* Adjust the styling for the text box in center content */
+  .text-box {
+    background-color: white;
+    color: black;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left; /* Adjust the text alignment as needed */
+  }
+  
+  /* Add some margin to the form to separate it from the center content */
+  form {
+    margin-top: 20px;
+  }
+
+  /* position: relative; */
+  /* width: 100%; */
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 113%;
+}
+.arrow-container{ 
+  margin-left:86%;
+  margin-top: -10%;
+  }
+  .arrow-image {
+    width: 20%;
+    height: auto;
+    position: sticky;
+    /* margin-top: -145%; */
+    /* Set the default filter to make the image white */
+    filter: brightness(50%) sepia(100%) saturate(0%);
+    /* Add a transition to create a smooth animation */
+    transition: filter 0.3s ease;
+  }
+  
+  /* Add a hover rule to change the filter on hover */
+  .arrow-image:hover {
+    /* Set the filter to make the image pinkish */
+    filter: brightness(100%); /* Adjust the hue-rotate value to get the desired pinkish effect */
+  }
+.col-md-4 {
+-ms-flex: 0 0 33.333333%;
+flex: 0 0 33.333333%;
+max-width: 28.333333%;
+/* margin-bottom: 10%; */
+background-color: white;
+color: black;
+padding: 19px;
+
+border-radius: 13px;}
+.pl-0, .px-0 {
+  /* padding-left: 0!important; */
+}
+
+.center-image img{
+  z-index: 1; 
+margin-top: -100px;
+margin-bottom: 10px
+;}
+
+/* Your existing CSS code here */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10%;
+}
+
+h4 {padding: 5%;
+  color:#000
+}
+
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 5%;
+}
+
+.button {
+  display: inline-flex;
+  padding: 15.5px 24px 15.5px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 5%;
+  background-color: #f23580;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color:#00bff0;
+}
+
+.center-content{
+  align-items: flex-start; /* Align items to the top of the container */
+  padding: 20px;
+  margin-bottom: 10%;
+  border-radius: 1%;
+}
+
+
+.jewl-img img {
+  position: absolute;
+  top: -200%;
+  left: 0;
+  width: 100%;
+  /* width: max-content; */
+  /* height: 242%; */
+  z-index: -1;
+
+}
+
+
+.center-image img {
+  z-index: 1;
+  /* margin-top: -100px; */
+  margin-bottom: 10px;
+  width: 100%;
+  margin-top: -16%;
+}
+
+
+.center-content h4 {
+  font-size: 38px;
+  color: #F23580;
+}
+
+.smart-design {
+  background-color: #FFF;
+  color: #333;
+
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+
+
+
+
+
+/* Styles for the image box */
+
+/* Styles for the flexbox */
+.image-wrapper {
+ 
+  width: 40%;
+  float: left;
+  margin-right: 30px; /* Add some spacing between the image and the grid */
+}
+
+/* Style for the image */
+
+
+
+    /* padding-bottom: 10px; */
+
+
+/* Center the resume image horizontally */
+.image-section {
+  text-align: center;
+}
+
+
+.h5 {
+  color: #F23580;
+  margin-left: 50%;
+  font-size: 32px;
+  padding-bottom: 46px;
+  position: relative;
+}
+
+/* Use ::before pseudo-element to add the border image as a background */
+.h5::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px; /* Adjust this value to adjust the position of the border image */
+  width: 60px; /* Adjust the width of the border image */
+  height: 100%;
+ 
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.h6, h6 {
+  margin-top: -10px; color: #F23580; font-size: 38px;
+}
+
+.h7 {
+  color:#F23580;
+  font-size: 2rem;
+
+}
+/* Rest of your CSS code... */
+
+/* Apply general styles to the form and its elements */
+body {
+  background-color: white;
+  color: black; /* Set the text color to black */
+}
+
+/* Apply general styles to the form and its elements */
+form {
+  
+  padding: 38px;
+  background-color: white;
+  border-radius: 20px;
+  margin-left: 25%;
+  width: 50%;
+}
+
+.contact-title p{
+  color: #00BFF0;
+  font-family: Mulish;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 10px;
+  margin-left: -10px;
+  /* line-height: 53px; */
+}
+
+/* Adjust the size of the input fields */
+.form-control {
+  width: 100%; /* Set the input fields to take up 100% of the available width */
+  padding: 10px; /* Adjust the padding as needed */
+  color: black; /* Set the text color to black */
+}
+
+/* Adjust the size of the labels */
+.form-label {
+  font-size: 16px; /* Adjust the font size as needed */
+  color: black; /* Set the text color to black */
+}
+
+/* Adjust the size of the checkbox input */
+.form-check-input {
+  width: 20px; /* Adjust the width of the checkbox as needed */
+  height: 20px; /* Adjust the height of the checkbox as needed */
+  color: black; /* Set the text color to black */
+}
+
+/* Adjust the size of the checkbox label */
+.form-check-label {
+  font-size: 14px; /* Adjust the font size of the checkbox label as needed */
+  color: black; /* Set the text color to black */
+}
+
+/* Adjust the size of the submit button */
+.btn-primary {
+  font-size: 16px; /* Adjust the font size of the button as needed */
+  padding: 10px 20px; /* Adjust the padding of the button as needed */
+  color: black; /* Set the text color to black */
+  background-color: #F23580;
+}
+
+#exampleInputPassword1.form-control {
+  height: 160px;
+}
+
+/* Footer styles */
+.footer {
+  width: 100%;
+  margin-top: 5%;
+  background-color: #053b49;
+  color: white;
+  padding: 30px;
+  position: absolute; /* Position the footer at the bottom of the viewport */
+  bottom: 1; /* Stick it to the bottom of the viewport */
+  list-style: none;
+}
+
+
+
+/* Add appropriate padding to create space between footer and content above it */
+
+
+
+.footer-logo img {
+  width: 70px;
+  height: auto;
+  margin-top: -17%;
+  margin-left: 90%;
+}
+
+.footer-navigation {
+  list-style: none;
+}
+
+.footer-navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-navigation li a {
+  color: white; /* Set the default text color to white */
+  transition: color 0.3s ease; /* Add a transition for smooth animation */
+}
+
+.footer-navigation li a:hover {
+  color: #F23580; /* Change the text color to #F23580 on hover */
 }
