@@ -87,17 +87,7 @@
     }
   
     
-    .text-box {
-      font-size: 14px;
-      /* width: 826px; */
-      background-color: white;
-      color: black;
-      border-radius: 16px;
-       margin-bottom: 20px;
-       
-        padding: 4%;
-        width: 100%;
-    }
+
 
     .h2, h2{
       font-size: 1.6rem;
@@ -172,13 +162,7 @@ text-align: center;
   box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;
 }
   
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  
- 
-}
+
 .col-6 {
   font-size: 0.75rem;
   color: black;
@@ -203,9 +187,10 @@ text-align: center;
   background-color: white;
   border-radius: 20px;
   margin: 5%}
+
   .jewl-img img {
     position: absolute;
-    top: -65%;
+    
     left: 0;
     width: 100%;
     /* width: max-content; */
@@ -368,12 +353,7 @@ body {
   /* position: relative; */
   /* width: 100%; */
   
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 113%;
-}
+
 .arrow-container{ 
   margin-left:86%;
   margin-top: -10%;
@@ -417,8 +397,9 @@ margin-bottom: 10px
 /* Your existing CSS code here */
 .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-bottom: 10%;
+  column-gap: 5%;
 }
 
 h4 {padding: 5%;
@@ -466,7 +447,7 @@ h4 {padding: 5%;
 
 .jewl-img img {
   position: absolute;
-  top: -200%;
+  top: -2%;
   left: 0;
   width: 100%;
   /* width: max-content; */
@@ -499,7 +480,14 @@ h4 {padding: 5%;
 }
 
 
-
+.col-6 {
+   color: black;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  background-color: #fff;
+  font-size: 1rem;
+}
 
 
 
