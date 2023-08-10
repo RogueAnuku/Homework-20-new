@@ -219,6 +219,7 @@ h4 {padding: 5%;
   align-items: flex-start; /* Align items to the top of the container */
   padding: 20px;
   margin-bottom: 10%;
+  border-radius: 1%;
 }
 
 
@@ -510,18 +511,7 @@ margin-top: 100px;
   padding-bottom: 50px;
   }
 
- p[style="color: black;"] {
-  /* Add your styles here */
-  /* For example, you can set a different font size */
-  font-size: 14px;
-  color:#111;
-}
-p[style="color: black;"] t[style="font-size: 14px;"] {
-  /* Add your styles here */
-  /* For example, you can set a different font size */
-  font-size: 18px;
-}
-   
+
   .button-container {
     display: flex;
     justify-content: center;
@@ -647,7 +637,7 @@ p[style="color: black;"] t[style="font-size: 14px;"] {
     }
 
     .h2, h2{
-     
+      font-size: 1.6rem;
       color: #F23580; 
       text-align: center;
       padding-top: 4%;
@@ -655,8 +645,7 @@ p[style="color: black;"] t[style="font-size: 14px;"] {
  
     }
     .h3,h3 {
-     
-     
+     font-size: 1.6rem;     
      color: #F23580; 
      text-align: center;
      padding-top: 4%;
@@ -668,7 +657,15 @@ p[style="color: black;"] t[style="font-size: 14px;"] {
     text-align: center;
     color: #F23580;
   }
-
+  .smart-design {
+    background-color: #FFF;
+    color: #333;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .p4 {
+   font-size:  0.75rem;
+  }
 
 .smart-design img{
   width: 100%;
@@ -712,8 +709,22 @@ text-align: center;
   box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;
 }
   
-
-
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+ 
+}
+.col-6 {
+  font-size: 0.75rem;
+  color: black;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  background-color: white;
+  /* font-size: 1rem; */
+}
 
 .h5, h5 {
   text-align: center;
@@ -729,6 +740,20 @@ text-align: center;
   background-color: white;
   border-radius: 20px;
   margin: 5%}
+  .jewl-img img {
+    position: absolute;
+    top: -65%;
+    left: 0;
+    width: 100%;
+    /* width: max-content; */
+    /* height: 242%; */
+    z-index: -1;
+  
+  }
+.smart-design .p4 {
+      font-size: .75rem;
+}
+
 
   .contact-title-wrapper {
   }
