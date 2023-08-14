@@ -1,4 +1,5 @@
 @media (min-width: 320px) and (min-device-width: 480px) {
+
   /* Add your styles for this media query here */
 }
 
@@ -181,14 +182,14 @@ text-align: center;
 
   .jewl-img img {
     position: absolute;
-    
+    margin-top: -110%;
     left: 0;
     width: 100%;
     /* width: max-content; */
     /* height: 242%; */
     z-index: -1;
-  
-  }
+    overflow: hidden;
+}
 .smart-design .p4 {
       font-size: .75rem;
 }
@@ -340,7 +341,7 @@ body {
 
 .arrow-container{ 
   margin-left:86%;
-  margin-top: -10%;
+  margin-top: -16%;
   }
   .arrow-image {
     width: 20%;
@@ -429,13 +430,13 @@ h4 {padding: 5%;
 
 .jewl-img img {
   position: absolute;
-  top: -2%;
+  margin-top: -110%;
   left: 0;
   width: 100%;
   /* width: max-content; */
   /* height: 242%; */
   z-index: -1;
-
+  overflow: hidden;
 }
 
 
@@ -527,6 +528,17 @@ h4 {padding: 5%;
   font-weight: bold;
   margin-left: 47%;
   margin-top: 2%;
+  transition: transform 0.3s ease;
+}
+
+.h7,h7 :hover{
+  color:  #f23580;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 47%;
+  margin-top: 2%;
+  transform: scale(1.05);
 }
 
 .h8, h8 {
@@ -575,7 +587,8 @@ body {
 .content-wrapper {
   position: relative;
   z-index: 1;
-  margin-bottom: 7%;
+  margin-top: 12%;
+ 
 }
 
 .resume-contact-wrapper {
@@ -653,6 +666,7 @@ form {
   position: absolute; /* Position the footer at the bottom of the viewport */
   bottom: 1; /* Stick it to the bottom of the viewport */
   list-style: none;
+  margin-top: -12%;
 }
 
 .footer-navigation {
@@ -663,18 +677,27 @@ form {
 /* Add appropriate padding to create space between footer and content above it */
 
 .footer-logo {
-  margin-top: 4%;
+
+  margin-right: 30%;
+
+}
+
+.footer-logo {
+  margin-right: 12%;
+  margin-top: 2%;
 }
 
 .footer-logo img {
-  width: 70px;
+    width: 70px;
   height: auto;
-  margin-top: -17%;
+margin-top: -10%;
   margin-left: 90%;
 }
 
 .footer-navigation {
   list-style: none;
+  margin-top: 2%; 
+  margin-bottom: 2%;
 }
 
 .footer-navigation a {
@@ -691,4 +714,13 @@ form {
 
 .footer-navigation li a:hover {
   color: #F23580; /* Change the text color to #F23580 on hover */
+}
+a .navigation-links {
+  color: #FFF;
+}
+.bg-light {
+  background-color: black;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: #fff;
 }
