@@ -9,14 +9,7 @@
   @media (min-width: 960px) and (min-height: 540px) {
     
     /* Top bar styles */
-    .top-bar {
-      background-color: black;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-    }
-    
+  
     /* Logo styles */
     .logo {
       display: flex;
@@ -26,35 +19,8 @@
     
     
     
-    
-    /* Navigation links styles */
-    .navigation-links {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      align-items: center;
-    }
-    
-    .navigation-links li {
-      margin-right: 8px; 
-      font-family: "mulish";/* Adjust this value to change the spacing between the navigation links */
-    }
-    
-    .navigation-links a {
-      color: white;
-      text-decoration: none;
-      font-size: 20px;
-      font-weight: 600;
-      padding: 10px;
-      border-radius: 10px;
-      transition: background-color 0.3s ease;
-    }
-    
-    .navigation-links a:hover {
-      background-color: #f23580;
-      box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;
-    }
+
+
     
 
     .hero-heading {
@@ -217,22 +183,7 @@ body {
  
 
 /* Adjust the top-bar styles */
-.top-bar {
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
 
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.top-bar-logo img{
-  width: 15%;
-}
 
 .name {
   font-family: 'Mulish', sans-serif;
@@ -258,6 +209,10 @@ body {
   padding: 10px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+}
+.navigation-links a:hover {
+  background-color: #f23580;
+  box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;
 }
 .navigation-links li {
   margin-right: 5%;
@@ -341,7 +296,7 @@ body {
 
 .arrow-container{ 
   margin-left:86%;
-  margin-top: -16%;
+  margin-top: -1%;
   }
   .arrow-image {
     width: 20%;
@@ -590,6 +545,9 @@ body {
   margin-top: 12%;
  
 }
+.resume-section {
+  margin-top: -121%;
+}
 
 .resume-contact-wrapper {
   /* Your existing styles for the wrapper */
@@ -597,6 +555,9 @@ body {
   z-index: 2; /* Place the contact form above the background image */
 }
 /* Apply general styles to the form and its elements */
+.resume-title-wrapper {
+  margin-bottom: 10%;
+}
 form {
   
   padding: 38px;
@@ -666,7 +627,7 @@ form {
   position: absolute; /* Position the footer at the bottom of the viewport */
   bottom: 1; /* Stick it to the bottom of the viewport */
   list-style: none;
-  margin-top: -12%;
+  
 }
 
 .footer-navigation {
@@ -723,4 +684,36 @@ a .navigation-links {
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
   color: #fff;
+}
+.navigation-links li {
+  margin-right: 5%;
+  font-family: "mulish";
+}
+.navigation-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.nav-link {
+  display: block;
+  /* padding: .5rem 4rem; */
+  font-size: 1.5rem;
+  justify-content: right;
+  color: #FFF;
+}
+.navbar-nav mr-auto { justify-content: flex-start;
+
+}
+.mr-auto, .mx-auto {
+  margin-left: 69%;
+}
+a {
+  /* color: #007bff; */
+  text-decoration: auto;
+  font-family: 'Mulish';
+  background-color: #f23580;
 }
