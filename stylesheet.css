@@ -149,13 +149,7 @@ text-align: center;
   flex: 0 0 50%;
  
  }
- .col-6 {
-  color: black;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  max-width: 50%;
-  background-color: white;
-}
+ 
 
   .col-md-6 img {   
   border-radius: 4%;
@@ -163,15 +157,6 @@ text-align: center;
 }
   
 
-.col-6 {
-  font-size: 0.75rem;
-  color: black;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  max-width: 50%;
-  background-color: white;
-  /* font-size: 1rem; */
-}
 
 .h5, h5 {
   text-align: center;
@@ -417,12 +402,7 @@ h4 {padding: 5%;
 }
 
 .button {
-  display: inline-flex;
-  padding: 15.5px 24px 15.5px 28px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  padding: 5%;
+
   background-color: #f23580;
   color: white;
   text-decoration: none;
@@ -431,6 +411,11 @@ h4 {padding: 5%;
   border: none;
   border-radius: 30px;
   cursor: pointer;
+  display: inline-flex;
+  padding: 15.5px 24px 15.5px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
 .button:hover {
@@ -487,6 +472,7 @@ h4 {padding: 5%;
   max-width: 50%;
   background-color: #fff;
   font-size: 1rem;
+  border-radius: 2%;
 }
 
 
@@ -520,6 +506,14 @@ h4 {padding: 5%;
   font-size: 32px;
   padding-bottom: 46px;
   position: relative;
+}
+.h5, h5 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #F23580;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 /* Use ::before pseudo-element to add the border image as a background */
