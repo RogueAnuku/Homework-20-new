@@ -142,8 +142,8 @@ text-align: center;
   .h6, h6 {
         /* margin-top: -10px; */
         color: #F23580;
-        font-size: 20px;
-        font-weight: bold;}
+        font-size: 1.5rem; 
+        }
    .col-md-6 {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
@@ -322,8 +322,8 @@ body {
   
   /* Adjust the styling for the text box in center content */
   .text-box {
-    background-color: white;
-    color: black;
+    background color: #000;
+    color: white;
     border-radius: 16px;
     padding: 20px;
     margin-bottom: 20px;
@@ -497,6 +497,7 @@ h4 {padding: 5%;
 /* Center the resume image horizontally */
 .image-section {
   text-align: center;
+  margin-top: 2%;
 }
 
 
@@ -508,7 +509,7 @@ h4 {padding: 5%;
   position: relative;
 }
 .h5, h5 {
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   font-size: 2rem;
   color: #F23580;
@@ -516,29 +517,25 @@ h4 {padding: 5%;
   margin-bottom: 5%;
 }
 
-/* Use ::before pseudo-element to add the border image as a background */
-.h5::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -30px; /* Adjust this value to adjust the position of the border image */
-  width: 60px; /* Adjust the width of the border image */
-  height: 100%;
- 
-  background-size: cover;
-  background-repeat: no-repeat;
-  transform: translateY(-50%);
-  z-index: -1;
-}
 
-.h6, h6 {
-  margin-top: -10px; color: #F23580; font-size: 38px;
-}
 
-.h7 {
-  color:#F23580;
+
+
+  .h7,h7 {
+  color:  #f23580;
+  text-align: center;
   font-size: 2rem;
+  font-weight: bold;
+  margin-left: 47%;
+  margin-top: 2%;
+}
 
+.h8, h8 {
+    color: #F23580;
+    margin-left: 47%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20%;
 }
 /* Rest of your CSS code... */
 
