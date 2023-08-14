@@ -90,13 +90,15 @@
 
 
     .h2, h2{
-      font-size: 1.6rem;
+      font-size: 2.6rem;
       color: #F23580; 
       text-align: center;
       padding-top: 4%;
       padding-bottom: 4%;
  
     }
+
+
     .h3,h3 {
      font-size: 1.6rem;     
      color: #F23580; 
@@ -115,6 +117,10 @@
     color: #333;
     margin-left: 4%;
     margin-right: 4%;
+    transition: transform 0.3s ease;
+  }
+  .smart-design :hover {
+    transform: scale(1.05);
   }
   .p4 {
    font-size:  0.75rem;
@@ -197,11 +203,6 @@ text-align: center;
 /* max-width: 50%; */
 
 /* Media query for devices with a minimum width of 320px and minimum device width of 480px */
-@media (min-width: 320px) and (min-device-width: 480px) {
-  /* Add your styles for this media query here */
-}
-@media (min-width: 768px) and (min-device-width: 1024px) {
-  /* Add your styles for this media query here */
 
 body {
      font-family: 'Mulish', sans-serif;
@@ -212,9 +213,7 @@ body {
   min-height: 100vh;
   position: relative; /* Set body to relative position */
 }
-}
-
-  
+ 
 
 /* Adjust the top-bar styles */
 .top-bar {
@@ -358,7 +357,7 @@ body {
   .arrow-image:hover {
     /* Set the filter to make the image pinkish */
     filter: brightness(100%); /* Adjust the hue-rotate value to get the desired pinkish effect */
-  }
+    transform: scale(1.05);}
 .col-md-4 {
 -ms-flex: 0 0 33.333333%;
 flex: 0 0 33.333333%;
@@ -369,9 +368,7 @@ color: black;
 padding: 19px;
 
 border-radius: 13px;}
-.pl-0, .px-0 {
-  /* padding-left: 0!important; */
-}
+
 
 .center-image img{
   z-index: 1; 
@@ -462,7 +459,9 @@ h4 {padding: 5%;
 
   margin-left: 4%;
   margin-right: 4%;
+
 }
+
 
 
 .col-6 {
@@ -531,20 +530,59 @@ h4 {padding: 5%;
 }
 
 .h8, h8 {
+
     color: #F23580;
     margin-left: 47%;
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 20%;
 }
-/* Rest of your CSS code... */
 
 /* Apply general styles to the form and its elements */
 body {
   background-color: white;
   color: black; /* Set the text color to black */
 }
+.about-section {
+  /* Other styles for the section */
+  transition: transform 0.3s ease; /* Add a transition property */
+}
 
+.about-section:hover {
+  transform: scale(1.05); /* Apply a slight zoom-in effect on hover */
+}
+
+
+
+.background-img {
+ 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 7%;
+}
+
+.resume-contact-wrapper {
+  /* Your existing styles for the wrapper */
+  position: relative; /* Add relative positioning to contain the form */
+  z-index: 2; /* Place the contact form above the background image */
+}
 /* Apply general styles to the form and its elements */
 form {
   
@@ -555,15 +593,16 @@ form {
   width: 50%;
 }
 
-.contact-title p{
+.contact-title p {
   color: #00BFF0;
   font-family: Mulish;
-  font-size: 22px;
+  font-size: 1.5rem;
   font-style: normal;
-  font-weight: 400;
+  width: 34%;
+  margin-left: 34%;
+  /* font-weight: 400; */
   padding: 10px;
-  margin-left: -10px;
-  /* line-height: 53px; */
+
 }
 
 /* Adjust the size of the input fields */
@@ -607,20 +646,25 @@ form {
 /* Footer styles */
 .footer {
   width: 100%;
-  margin-top: 5%;
+ 
   background-color: #053b49;
   color: white;
-  padding: 30px;
+  padding: 6px;
   position: absolute; /* Position the footer at the bottom of the viewport */
   bottom: 1; /* Stick it to the bottom of the viewport */
   list-style: none;
 }
 
+.footer-navigation {
+  margin-top: 2%;
+}
 
 
 /* Add appropriate padding to create space between footer and content above it */
 
-
+.footer-logo {
+  margin-top: 4%;
+}
 
 .footer-logo img {
   width: 70px;
