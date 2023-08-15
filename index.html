@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZTGLCQL8B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-3ZTGLCQL8B');
+  </script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <title>My Portfolio</title>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
  </head>
  <style>
     body {
@@ -40,34 +49,37 @@
     }
   </style>
 <nav class="navbar navbar-expand-lg custom-navbar">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" id="mobile-nav-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <img src="./Logo.gif" style="width: 80px;"><p style="color:#F23580; margin-bottom: -2rem;">Anika McPhee</p>
-    <ul class="navbar-nav mr-auto navigation-links" >
-      <li class="nav-item active">
-        <a class="nav-link" href="#home-section">Home <span class="sr-only">(current)</span></a>
+    <div class="d-none d-lg-block align-items-center mr-auto"> <!-- Hide on mobile, show on lg and larger -->
+      <img src="./Logo.gif" style="width: 80px;">
+      <p style="color: #F23580; margin-bottom: -2rem; margin-left: 10px;">Anika McPhee</p>
+    </div>
+    <ul class="navbar-nav ml-auto navigation-links"> <!-- Use ml-auto for right alignment -->
+      <li class="nav-item">
+        <a class="nav-link" href="#home-section">Home</a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#project-section">Projects <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="#project-section">Projects</a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#about-section">About<span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="#about-section">About</a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#resume-section">Resume<span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="#resume-section">Resume</a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#contact-section">Contact<span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact-section">Contact</a>
       </li>
     </ul>
   </div>
 </nav>
 
 <div class="hero-image" id="home-section">
-  
+ 
 
 <div class="hero-image">
   <img src="./WRH.png" alt="Hero Image" style="width: 100%; margin-top: -2%;">
@@ -118,33 +130,40 @@
             </div>
       </div>
     </div>
-  </div>
-
-    <div class="center-content">
+  </div><div class="center-content">
  
-      <div class="jewl-img">
-        <img src="./AdobeStock_570844739bbb 2.svg">
-     </div>
-      <div class="center-container">
-        <div class="container">
-          <div class="row">
-            <div class="col-6 px-0" style="border: 3px solid #dee2e6";>
-              <div class="smart-design">
-                  <h4> Designing Smart Receipes</h4>
-            <img src="./Homechef1mobile.png">
-            <p4>
-              This case study addresses the problem of people struggling to find new and exciting recipes that cater to their food preferences. The proposed solution is an AI-powered mobile application that generates personalized recipes based on users' dietary preferences, available ingredients, and desired meal types. The app aims to provide a convenient and time-efficient way for users to discover and plan diverse and nutritious meals. By using the app, users can save time, broaden their culinary horizons, improve their nutrition knowledge, and efficiently organize their meal preparations. The focus is on creating a seamless and enjoyable user experience while helping users achieve their goals of learning new recipes, saving money on groceries, trying new dishes, and managing their time effectively.
-            </p4>
-            <div class="button-container">
-              <a href="#" class="button">click here</a>
+    <div class="jewl-img">
+      <img src="./AdobeStock_570844739bbb 2.svg">
+   </div>
+   <div class="center-content">
+    <div class="center-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 px-0" style="border: 3px solid #dee2e6;">
+            <div class="smart-design">
+              <h4>Designing Smart Recipes</h4>
+              <img src="./Homechef1mobile.png">
+              <p>
+                This case study addresses the problem of people struggling to find new and exciting recipes that cater to their food preferences. The proposed solution is an AI-powered mobile application that generates personalized recipes based on users' dietary preferences, available ingredients, and desired meal types. The app aims to provide a convenient and time-efficient way for users to discover and plan diverse and nutritious meals. By using the app, users can save time, broaden their culinary horizons, improve their nutrition knowledge, and efficiently organize their meal preparations. The focus is on creating a seamless and enjoyable user experience while helping users achieve their goals of learning new recipes, saving money on groceries, trying new dishes, and managing their time effectively.
+              </p>
+              <div class="button-container">
+                <a href="#" class="button">Click here</a>
+              </div>
             </div>
           </div>
+          
+          <div class="col-md-6 px-0" style="border: 3px solid #dee2e6;  border-radius: 2%;
+          background: white;
+          "> <h style="color: #F23580;margin-left: 30%;
+    font-size: 2.5rem;">
+           New Project comming soon! 
+          </h>
+          
+          </div>
         </div>
-        </div>
+      </div>
     </div>
-   </div>
   </div>
-
    
   <div class="container">
     <div class="row">
@@ -173,9 +192,7 @@
   <div class="arrow-container">
     <img src="./Arrow-up.png" class="arrow-image">
   </div>
-  <div style=" with: 90%;">
-    <img style="vertical-align: middle; border-style: none; margin-top: -31%;" src="./bottomjewl.svg" alt="">
-  </div>
+
 
   
   <div class="resume-section" id="resume-section">
@@ -207,7 +224,9 @@
      
     </div>
   </div>
-
+  <div class="bottomjewl">
+    <img style="vertical-align: middle; width: 100%;" src="./bottomjewl.svg" alt="">
+  </div>
   
   <footer class="footer">
     <ul class="footer-navigation">
@@ -248,5 +267,19 @@
         });
       });
     </script>
+   <script>
+    // JavaScript function to handle mobile navigation toggle
+    document.addEventListener("DOMContentLoaded", function () {
+      const mobileNavToggler = document.getElementById("mobile-nav-toggler");
+      mobileNavToggler.addEventListener("click", function () {
+        const navMenu = document.getElementById("navbarSupportedContent");
+        navMenu.classList.toggle("show");
+      });
+    });
+  </script>
+    
+    
+    
+    
        
     </html>

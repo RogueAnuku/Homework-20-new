@@ -1,10 +1,40 @@
 @media (min-width: 320px) and (min-device-width: 480px) {
 
-  /* Add your styles for this media query here */
+
+  .navbar-toggler {
+    border-color: #F23580; /* Change the border color of the button */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #F23580; /* Change the background color of the icon */
+  }
+  .h1, h1 {
+    font-size: 1.5rem;
+}
+.navbar-collapse {
+  background-color: black; /* Change the background color of the collapsed menu */
 }
 
+.navbar-nav .nav-item .nav-link {
+  color: white; /* Change the text color of the collapsed menu items */
+}
+}
+.mobile-menu {
+  position: absolute;
+  top: 100%; /* Position it below the mobile button */
+  right: 0;
+  left: 0;
+  background-color: #fff; /* Set background color */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Add a shadow for style */
+  z-index: 1000; /* Set a high z-index to make it appear above content */
+  display: none; /* Initially hide the menu */
+}
 
-  
+/* Show the mobile menu when the navigation is expanded */
+.show .mobile-menu {
+  display: block;
+}
+
   /* Additional styles for laptops with a screen size of 960x540 and above */
   @media (min-width: 960px) and (min-height: 540px) {
     
@@ -14,14 +44,11 @@
     .logo {
       display: flex;
       align-items: center;
-      margin-top: 37px;
+      
     }
     
     
-    
-
-
-    
+        
 
     .hero-heading {
     color: #FFF;
@@ -528,23 +555,7 @@ body {
 
 
 
-.background-img {
- 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
-}
 
-.background-img img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  max-height: 100%;
-  overflow: hidden;
-}
 
 .content-wrapper {
   position: relative;
@@ -553,7 +564,7 @@ body {
  
 }
 .resume-section {
-  margin-top: -121%;
+
 }
 
 .resume-contact-wrapper {
@@ -625,17 +636,19 @@ form {
 }
 
 /* Footer styles */
-.footer {
-  width: 100%;
- margin-top: 8%;
-  background-color: #053b49;
-  color: white;
-  padding: 6px;
-  position: absolute; /* Position the footer at the bottom of the viewport */
-  bottom: 1; /* Stick it to the bottom of the viewport */
-  list-style: none;
-  
-}
+
+  .footer {
+    width: 100%;
+    margin-top: 8%;
+    background-color: #053b49;
+    color: white;
+    padding: 6px;
+    position: absolute;
+    bottom: 0; /* Stick it to the bottom of the viewport */
+    list-style: none;
+    overflow: hidden; /* Hide overflowing content */
+  }
+
 
 .footer-navigation {
   margin-top: 2%;
@@ -683,45 +696,41 @@ margin-top: -10%;
 .footer-navigation li a:hover {
   color: #F23580; /* Change the text color to #F23580 on hover */
 }
-a .navigation-links {
-  color: #FFF;
+.custom-navbar {
+  background-color: black; /* Set the background color */
 }
-.bg-light {
-  background-color: black;
-}
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-  color: #fff;
-}
-.navigation-links li {
-  margin-right: 5%;
-  font-family: "mulish";
-}
+
 .navigation-links a {
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1rem; /* Adjust font size for smaller screens */
   font-weight: 600;
   padding: 10px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
-.nav-link {
-  display: block;
-  /* padding: .5rem 4rem; */
-  font-size: 1.5rem;
-  justify-content: right;
-  color: #FFF;
-}
-.navbar-nav mr-auto { justify-content: flex-start;
 
+.navigation-links a:hover {
+  background-color: white (255, 255, 255, 0.2); /* Add a hover effect */
 }
-.mr-auto, .mx-auto {
-  margin-left: 56%;
+
+.navbar-toggler-icon {
+  background-color: white; /* Change the color of the toggler icon */
 }
-a {
-  /* color: #007bff; */
-  text-decoration: auto;
-  font-family: 'Mulish';}
   html {
     scroll-behavior: smooth;
+  }
+  .bottomjewl img{
+ 
+      margin-top: -100%;
+      width: 100%;
+  }
+  #contact-section.content-wrapper {
+   
+      position: relative;
+      z-index: 1;
+      margin-top: 8%;
+  }
+  .d-flex.align-items-center {
+    width: 100%;
   }
