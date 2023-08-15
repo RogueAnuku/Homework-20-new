@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <title>My Portfolio</title>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -12,8 +11,8 @@
  <style>
     body {
       font-family: 'Mulish', sans-serif;
-      background-color: black;}
-       
+      background-color: black;
+    }
 
     /* Rest of your existing CSS styles */
 
@@ -34,7 +33,6 @@
       left: -30px; /* Adjust this value to adjust the position of the border image */
       width: 60px; /* Adjust the width of the border image */
       height: 100%;
-     
       background-size: cover;
       background-repeat: no-repeat;
       transform: translateY(-50%);
@@ -47,13 +45,13 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <img src="./Logo.gif" style="width: 80px;">
-    <ul class="navbar-nav mr-auto navigation-links">
+    <img src="./Logo.gif" style="width: 80px;"><p style="color:#F23580; margin-bottom: -2rem;">Anika McPhee</p>
+    <ul class="navbar-nav mr-auto navigation-links" >
       <li class="nav-item active">
         <a class="nav-link" href="#home-section">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#projects-section">Projects <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#project-section">Projects <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="#about-section">About<span class="sr-only">(current)</span></a>
@@ -68,6 +66,7 @@
   </div>
 </nav>
 
+<div class="hero-image" id="home-section">
   
 
 <div class="hero-image">
@@ -80,15 +79,13 @@
     
  
 <body>
-  <div class="center-image">
+  <div class="center-image" id="#project-section" >
       <img src="./Portfolio-center-image.png" alt="Large Image">
   </div>
   <div class="content-wrapper">
     <h2 style="color: #F23580; font-size: 2rem; position: relative;">Projects</h2>
     <img src="./boarder.png" alt="Your Image" style=" top: 1; left: 0; width: 49%; height: 1%; margin-left: 25%; margin-top: -13%;"> 
-    <div class="center-projects" id="projects">      
-    </div>
-</div>
+          </div>
   
 
   <div class="container" style="width: 100%;">
@@ -173,11 +170,13 @@
       </div>
     </div>
   </div>
-   
+  <div class="arrow-container">
+    <img src="./Arrow-up.png" class="arrow-image">
+  </div>
   <div style=" with: 90%;">
     <img style="vertical-align: middle; border-style: none; margin-top: -31%;" src="./bottomjewl.svg" alt="">
   </div>
-  
+
   
   <div class="resume-section" id="resume-section">
     <div class="resume-title-wrapper">
@@ -188,7 +187,7 @@
     </div>
   </div>
   
-  <div class="content-wrapper">
+  <div class="content-wrapper" id="contact-section">
     <div class="resume-contact-wrapper">
     
         <form>
@@ -205,9 +204,7 @@
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
-      <div class="arrow-container">
-        <img src="./Arrow-up.png" class="arrow-image">
-      </div>
+     
     </div>
   </div>
 
@@ -228,31 +225,28 @@
         <img src="./linkedin.png" alt="LinkedIn">
       </a>
     </div>
-    <div style="margin-left: 85%">
-      <p>©2023 by Anika McPhee</p>
-    </div>
-    <div class="footer-logo">
-      <img src="./IconOnly_Transparent_NoBuffer.png" alt="Footer Logo">
-      
-  </footer>
-              
+      <div style="margin-left: 85%">
+        <p>©2023 by Anika McPhee</p>
+      </div>
+        <div class="footer-logo">
+          <img src="./IconOnly_Transparent_NoBuffer.png" alt="Footer Logo">
+        </div>
+  </footer>          
      </body>
      <script>
       $(document).ready(function() {
-  // Smooth scroll to sections when navigation links are clicked
-  $(".navbar-nav a").on("click", function(e) {
-    e.preventDefault();
-    var target = $(this).attr("href");
-    $("html, body").animate({ scrollTop: $(target).offset().top }, "slow");
-  });
-
-  // Smooth scroll to top when the arrow image is clicked
-  $(".arrow-image").on("click", function() {
-    $("html, body").animate({ scrollTop: 0 }, "slow");
-  });
-});
-        
-       
-     
+        // Smooth scroll to sections when navigation links are clicked
+        $(".navbar-nav a").on("click", function(e) {
+          e.preventDefault();
+          var target = $(this).attr("href");
+          $("html, body").animate({ scrollTop: $(target).offset().top }, "slow");
+        });
+    
+        // Smooth scroll to top when the arrow image is clicked
+        $(".arrow-image").on("click", function() {
+          $("html, body").animate({ scrollTop: 0 }, "slow");
+        });
+      });
     </script>
-</html>
+       
+    </html>
