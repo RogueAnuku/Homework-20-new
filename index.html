@@ -41,32 +41,32 @@
       z-index: -1;
     }
   </style>
-  <nav class="navbar navbar-expand-lg custom-navbar">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <img src="./Logo.gif">
-      <ul class="navbar-nav mr-auto navigation-links">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Projects <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Resume<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Contact<span class="sr-only">(current)</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <img src="./Logo.gif" style="width: 80px;">
+    <ul class="navbar-nav mr-auto navigation-links">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home-section">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#projects-section">Projects <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#about-section">About<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#resume-section">Resume<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#contact-section">Contact<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
   
 
@@ -239,40 +239,20 @@
      </body>
      <script>
       $(document).ready(function() {
-        // Smooth scroll to top when the arrow image is clicked
-        $(".arrow-image").on("click", function() {
-          $("html, body").animate({ scrollTop: 0 }, "slow");
-        });
-    
-        // Smooth scroll to projects section when "Projects" link is clicked
-        $("a.nav-link-projects").on("click", function(event) {
-          event.preventDefault();
-          const targetOffset = $("#projects").offset().top;
-          $("html, body").animate({ scrollTop: targetOffset }, "slow");
-        });
-    
-        // Smooth scroll for all footer navigation links
-        $("footer a[href^='#']").on("click", function(event) {
-          event.preventDefault();
-          const targetOffset = $(this.getAttribute("href")).offset().top;
-          $("html, body").animate({ scrollTop: targetOffset }, "slow");
-        });
-    
-        // Handle click event for the "Revitalizing Compassion" button
-        $(".revitalizing-button").on("click", function(event) {
-          event.preventDefault(); // Prevent the default link behavior
-    
-          var $button = $(this);
-          var $loader = $button.find(".liquid-loader");
-    
-          $button.addClass("loading"); // Add the loading class
-    
-          // Simulate a delay for the loading effect (replace with actual content loading)
-          setTimeout(function() {
-            $button.removeClass("loading"); // Remove the loading class
-            window.open("https://rogueanuku.github.io/hmw_20_jumbotron/", "_blank"); // Open the link in a new tab
-          }, 3000); // Adjust the duration as needed
-        });
-      });
+  // Smooth scroll to sections when navigation links are clicked
+  $(".navbar-nav a").on("click", function(e) {
+    e.preventDefault();
+    var target = $(this).attr("href");
+    $("html, body").animate({ scrollTop: $(target).offset().top }, "slow");
+  });
+
+  // Smooth scroll to top when the arrow image is clicked
+  $(".arrow-image").on("click", function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+  });
+});
+        
+       
+     
     </script>
 </html>

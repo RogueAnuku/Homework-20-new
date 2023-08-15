@@ -57,7 +57,7 @@
 
 
     .h2, h2{
-      font-size: 2.6rem;
+    
       color: #F23580; 
       text-align: center;
       padding-top: 4%;
@@ -191,6 +191,13 @@ body {
   color: #f23580;
   margin-left: -84%; /* Add a small margin to separate the logo and name slightly */
 }
+#navbarSupportedContent.collapse.navbar-collapse img {
+ 
+    margin-top: 2%;
+    margin-left: 6%;
+    width: 80px;
+}
+
 
 .navigation-links {
   list-style: none;
@@ -542,7 +549,7 @@ body {
 .content-wrapper {
   position: relative;
   z-index: 1;
-  margin-top: 12%;
+ 
  
 }
 .resume-section {
@@ -709,11 +716,12 @@ a .navigation-links {
 
 }
 .mr-auto, .mx-auto {
-  margin-left: 69%;
+  margin-left: 56%;
 }
 a {
   /* color: #007bff; */
   text-decoration: auto;
-  font-family: 'Mulish';
-  background-color: #f23580;
-}
+  font-family: 'Mulish';}
+  html {
+    scroll-behavior: smooth;
+  }
