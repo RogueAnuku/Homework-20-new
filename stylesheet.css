@@ -232,7 +232,7 @@ body {
   padding: 0;
   display: flex;
   align-items: center;
-  justify-content: end;
+
 }
 
 .navigation-links a {
@@ -266,6 +266,23 @@ body {
     transform: translate(-50%, -50%);
     z-index: 1;
   }
+  .navigation-links .nav-link {
+    display: inline-block;
+    padding: 10px 10px; /* Adjust the padding as needed */
+    text-align: center;
+    font-size: 0.75rem;
+     /* Set a fixed width for the navigation links */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+  }
+  
+  /* Your existing styles */
+  You should add the .navigation-links .nav-link section within your existing CSS file, maintaining your other styles. This new section specifically targets the navigation links within your navigation bar and applies the styles to make the links have a fixed width and consistent appearance.
+  
+  
+  
+  
+  
+  
   .h1,h1 {
     color: #f5f5f5;
   }
