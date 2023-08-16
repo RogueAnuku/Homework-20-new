@@ -1,13 +1,12 @@
 @media (min-width: 320px) and (min-device-width: 480px) {
 
 
-  .navbar-toggler {
-    border-color: #F23580; /* Change the border color of the button */
+  .navbar-toggler:hover img {
+    transform: scale(1.2); /* Increase the scale to zoom in */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
   }
   
-  .navbar-toggler-icon {
-    background-color: #F23580; /* Change the background color of the icon */
-  }
+ 
   .h1, h1 {
     font-size: 1.5rem;
 }
@@ -15,10 +14,6 @@
   background-color: black; /* Change the background color of the collapsed menu */
 }
 
-.navbar-nav .nav-item .nav-link {
-  color: white; /* Change the text color of the collapsed menu items */
-}
-}
 .mobile-menu {
   position: absolute;
   top: 100%; /* Position it below the mobile button */
@@ -34,7 +29,22 @@
 .show .mobile-menu {
   display: block;
 }
-
+.hero-content {
+  text-align: center;
+  color: #0ac7e7;
+  position: absolute;
+  font-size: 2rem;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.content-wrapper h2{
+    color: #F23580;
+    font-size: 1rem;
+    position: relative;
+}
+}
   /* Additional styles for laptops with a screen size of 960x540 and above */
   @media (min-width: 960px) and (min-height: 540px) {
     
@@ -80,7 +90,11 @@
       margin-left: 60px;
     }
   
-    
+    .content-wrapper h2{
+      color: #F23580;
+      font-size: 2rem;
+      position: relative;
+  }
 
 
     .h2, h2{
@@ -216,7 +230,7 @@ body {
   font-family: 'Mulish', sans-serif;
   font-size: 1.25rem; /* Adjust the font size as needed */
   color: #f23580;
-  margin-left: -84%; /* Add a small margin to separate the logo and name slightly */
+ 
 }
 #navbarSupportedContent.collapse.navbar-collapse img {
  
@@ -244,10 +258,7 @@ body {
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
-.navigation-links a:hover {
-  background-color: #f23580;
-  box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;
-}
+.
 .navigation-links li {
   margin-right: 5%;
   font-family: "mulish";
@@ -276,7 +287,7 @@ body {
   }
   
   /* Your existing styles */
-  You should add the .navigation-links .nav-link section within your existing CSS file, maintaining your other styles. This new section specifically targets the navigation links within your navigation bar and applies the styles to make the links have a fixed width and consistent appearance.
+  
   
   
   
@@ -731,9 +742,7 @@ margin-top: -10%;
   background-color: white (255, 255, 255, 0.2); /* Add a hover effect */
 }
 
-.navbar-toggler-icon {
-  background-color: white; /* Change the color of the toggler icon */
-}
+
   html {
     scroll-behavior: smooth;
   }

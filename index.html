@@ -1,82 +1,109 @@
 <!DOCTYPE html>
 <html>
-<head><!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZTGLCQL8B"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-3ZTGLCQL8B');
-  </script>
+<head>
+  <!-- Your head content here -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <title>My Portfolio</title>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Smooth scroll and mobile navigation toggle scripts
+      // ... (Your existing scripts)
+    });
+  </script>
 
- </head>
- <style>
+  <style>
+    /* Your existing styles */
     body {
       font-family: 'Mulish', sans-serif;
       background-color: black;
     }
 
-    /* Rest of your existing CSS styles */
-
-    /* Style for the h5 element */
-    .h5 {
-      color: #F23580;
-      margin-left: 50%;
-      font-size: 32px;
-      padding-bottom: 46px;
-      position: relative;
+    .custom-navbar .navbar-nav {
+      display: flex;
+      align-items: center;
+      margin-right: -15px;
     }
 
-    /* Use ::before pseudo-element to add the border image as a background */
-    .h5::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: -30px; /* Adjust this value to adjust the position of the border image */
-      width: 60px; /* Adjust the width of the border image */
-      height: 100%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      transform: translateY(-50%);
-      z-index: -1;
+    .custom-navbar .navbar-nav .nav-item {
+      margin: 0;
+    }
+
+    .custom-navbar .navbar-nav .nav-link {
+      padding: 0.5rem 1rem;
+      white-space: nowrap;
+    }
+
+    /* Adjust alignment of logo and name */
+    .logo {
+      width: 60px;
+      margin-right: 10px;
+    }
+
+    .name {
+      color: #F23580;
+      font: 1rem sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      .custom-navbar .navbar-nav {
+        display: none;
+      }
+  
+      .mobile-nav-content .logo {
+        width: 60px; /* Adjust the desired width */
+        margin-right: 5px; /* Adjust the desired margin */
+      }
+
+      .mobile-nav-content .name {
+        font-size: 1.2rem; /* Adjust the desired font size */
+        margin-right: 10px; /* Adjust the desired margin */
+      }
+
+      .mobile-nav-content .navbar-toggler {
+        flex: 1;
+      }
+
+      .mobile-nav-content .navbar-toggler-icon {
+        width: auto;
+      }
     }
   </style>
-<nav class="navbar navbar-expand-lg custom-navbar">
-  <button class="navbar-toggler" id="mobile-nav-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <div class="d-none d-lg-block align-items-center mr-auto">
-      <img src="./Logo.gif" style="width: 80px;">
-      <p style="color: #F23580; margin-bottom: -2rem; margin-left: 10px;">Anika McPhee</p>
-    </div>
-    <ul class="navbar-nav ml-auto navigation-links">
-      <li class="nav-item">
-        <a class="nav-link" href="#home-section">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#project-section">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#about-section">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#resume-section">Resume</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact-section">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+</head>
+<body>
+  <div class="container-fluid p-0">
+    <!-- Main Navigation Bar -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="logo-container d-lg-flex align-items-center">
+        <img src="./Logo.gif" class="logo" alt="Logo">
+        <p class="name">Anika McPhee</p>
+      </div>
+      <button class="navbar-toggler" id="mobile-nav-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img class="navbar-toggler-icon" src="./menu.png" alt="Menu Icon">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto navigation-links">
+          <li class="nav-item">
+            <a class="nav-link" href="#home-section">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project-section">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-section">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume-section">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-section">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+ 
 
 <div class="hero-image" id="home-section">
  
@@ -250,9 +277,10 @@
         <div class="footer-logo">
           <img src="./IconOnly_Transparent_NoBuffer.png" alt="Footer Logo">
         </div>
-  </footer>          
-     </body>
-     <script>
+      </footer>          
+    </body>
+
+    <script>
       $(document).ready(function() {
         // Smooth scroll to sections when navigation links are clicked
         $(".navbar-nav a").on("click", function(e) {
@@ -260,26 +288,27 @@
           var target = $(this).attr("href");
           $("html, body").animate({ scrollTop: $(target).offset().top }, "slow");
         });
-    
-        // Smooth scroll to top when the arrow image is clicked
+
         $(".arrow-image").on("click", function() {
           $("html, body").animate({ scrollTop: 0 }, "slow");
         });
       });
     </script>
-   <script>
-    // JavaScript function to handle mobile navigation toggle
-    document.addEventListener("DOMContentLoaded", function () {
-      const mobileNavToggler = document.getElementById("mobile-nav-toggler");
-      mobileNavToggler.addEventListener("click", function () {
+
+    <script>
+      // JavaScript function to handle mobile navigation toggle
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileNavToggler = document.getElementById("mobile-nav-toggler");
         const navMenu = document.getElementById("navbarSupportedContent");
-        navMenu.classList.toggle("show");
+
+        mobileNavToggler.addEventListener("click", function () {
+          navMenu.classList.toggle("show");
+        });
       });
-    });
-  </script>
+    </script>
     
     
     
     
        
-    </html>
+</html>
