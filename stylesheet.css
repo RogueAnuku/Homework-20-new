@@ -29,6 +29,11 @@
 .show .mobile-menu {
   display: block;
 }
+.content-wrapper h2 {
+text-align: center;
+    color: #F23580;
+    font-size: 1rem;} 
+
 .hero-content {
   text-align: center;
   color: #0ac7e7;
@@ -290,10 +295,7 @@ body {
   /* Your existing styles */
   
   
-  
-  
-  
-  
+ 
   
   .h1,h1 {
     color: #f5f5f5;
@@ -345,8 +347,9 @@ body {
     border-radius: 16px;
     padding: 20px;
     margin-bottom: 20px;
-    text-align: left; /* Adjust the text alignment as needed */
-  }
+    text-align: left;
+    font-size: .75rem;
+}
   
   /* Add some margin to the form to separate it from the center content */
   form {
@@ -402,8 +405,8 @@ margin-bottom: 10px
   column-gap: 2%;
   padding-left: 6%;
   padding-right: 6%;
+  font-size: .75rem;
 }
-
 h4 {padding: 5%;
   color:#000
 }
@@ -490,6 +493,14 @@ h4 {padding: 5%;
   border-radius: 20px;
   background: white;
 }
+
+.column-content p (text) {
+
+   
+    font-size: .75rem;
+    margin-bottom: 1rem;
+}
+
 
 
 /* Styles for the image box */
@@ -593,23 +604,6 @@ body {
 
 }
 
-.resume-contact-wrapper {
-  /* Your existing styles for the wrapper */
-  position: relative; /* Add relative positioning to contain the form */
-  z-index: 2; /* Place the contact form above the background image */
-}
-/* Apply general styles to the form and its elements */
-.resume-title-wrapper {
-  margin-bottom: 10%;
-}
-form {
-  
-  padding: 38px;
-  background-color: white;
-  border-radius: 20px;
-  margin-left: 25%;
-  width: 70%;
-}
 
 .contact-title p {
   color: #00BFF0;
@@ -667,16 +661,18 @@ form {
 /* Footer styles */
 
   .footer {
+  
     width: 100%;
     margin-top: 8%;
     background-color: #053b49;
     color: white;
     padding: 6px;
     position: absolute;
-    bottom: 0; /* Stick it to the bottom of the viewport */
+    bottom: 0;
+    height: 230px;
     list-style: none;
-    overflow: hidden; /* Hide overflowing content */
-  }
+    overflow: hidden;
+}
 
 
 .footer-navigation {
@@ -743,6 +739,12 @@ margin-top: -10%;
   background-color: white (255, 255, 255, 0.2); /* Add a hover effect */
 }
 
+.footer p{
+  margin-top: -88%;
+  font-size: .75rem;
+  margin-bottom: 1rem;
+  margin-left: -60%;
+}
 
   html {
     scroll-behavior: smooth;
