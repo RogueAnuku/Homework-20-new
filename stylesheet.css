@@ -44,7 +44,9 @@
     font-size: 1rem;
     position: relative;
 }
+
 }
+
   /* Additional styles for laptops with a screen size of 960x540 and above */
   @media (min-width: 960px) and (min-height: 540px) {
     
@@ -161,16 +163,15 @@ text-align: center;
    .col-md-6 {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
+  border-radius: 20px;
  
  }
  
 
-  .col-md-6 img {   
-  border-radius: 4%;
-  box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;
-}
   
-
+.img-fluid.mb-3 {
+  border-radius: 20px;
+}
 
 .h5, h5 {
   text-align: center;
@@ -189,7 +190,7 @@ text-align: center;
 
   .jewl-img img {
     position: absolute;
-    margin-top: -110%;
+    margin-top: -24%;
     left: 0;
     width: 100%;
     /* width: max-content; */
@@ -398,8 +399,9 @@ margin-bottom: 10px
 .row {
   display: flex;
   flex-wrap: nowrap;
-  margin-bottom: 10%;
-  column-gap: 5%;
+  column-gap: 2%;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 
 h4 {padding: 5%;
@@ -445,16 +447,6 @@ h4 {padding: 5%;
 }
 
 
-.jewl-img img {
-  position: absolute;
-  margin-top: -110%;
-  left: 0;
-  width: 100%;
-  /* width: max-content; */
-  /* height: 242%; */
-  z-index: -1;
-  overflow: hidden;
-}
 
 
 .center-image img {
@@ -462,7 +454,7 @@ h4 {padding: 5%;
   /* margin-top: -100px; */
   margin-bottom: 10px;
   width: 100%;
-  margin-top: -16%;
+
 }
 
 
@@ -491,7 +483,13 @@ h4 {padding: 5%;
   font-size: 1rem;
   border-radius: 2%;
 }
-
+ 
+.column-content 
+{
+  padding: 0 2%;
+  border-radius: 20px;
+  background: white;
+}
 
 
 /* Styles for the image box */
@@ -610,7 +608,7 @@ form {
   background-color: white;
   border-radius: 20px;
   margin-left: 25%;
-  width: 50%;
+  width: 70%;
 }
 
 .contact-title p {
@@ -623,6 +621,9 @@ form {
   /* font-weight: 400; */
   padding: 10px;
 
+}
+.container {
+  margin-top: 7%;
 }
 
 /* Adjust the size of the input fields */
