@@ -21,7 +21,10 @@
 
   @media (max-width: 320px) {
     
-  }
+    .mobile-nav-content .logo {
+        width: 40px; /* Adjust the desired width */
+        margin-right: 5px; /* Adjust the desired margin */
+      }
 
     /* Your existing styles */
     body {
@@ -45,28 +48,26 @@
     }
 
     /* Adjust alignment of logo and name */
-    .logo {
-      width: 60px;
-      margin-right: 10px;
-    }
+   
 
     .name {
       color: #F23580;
       font: 1rem sans-serif;
     }
-    
-
+  }
     @media (max-width: 768px)
-    
-    
+        
     {
-      .custom-navbar .navbar-nav {
-        display: none;
+      .logo.img-fluid {
+  max-width: 150px; /* Adjust the width as needed */
+}
+      body {
+        background-color: black;
       }
-  
-      .mobile-nav-content .logo {
-        width: 60px; /* Adjust the desired width */
-        margin-right: 5px; /* Adjust the desired margin */
+
+
+      .col-md-6-px-0 video{
+        width: 100%;
       }
 
       .mobile-nav-content .name {
@@ -81,6 +82,7 @@
       .mobile-nav-content .navbar-toggler-icon {
         width: auto;
       }
+      
       .carousel-inner {
     display: flex;
     justify-content: center;
@@ -134,29 +136,43 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
   /* Center the form on smaller screens */
-  @media (max-width: 768px) {
-    .resume-contact-wrapper form {
+     .resume-contact-wrapper form {
       width: 90%;
       margin: 0 auto;
     }
     .zoom-on-hover {
     transition: transform 0.3s; /* Apply transition to the transform property */
   }
+  
 
   /* Add hover effect for zooming in */
   .zoom-on-hover:hover {
     transform: scale(1.05); /* Scale up by 5% */
   }
+  @media (max-width: 1024px){
+    .navigation-links .nav-link {
+    display: inline-block;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 2rem;
+    box-sizing: border-box;
+}
+.custom-navbar .navbar-nav .nav-link {
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+}
+ body { background-color: black;}
   }
-    }
-  </style>
+  }
+   </style>
 </head>
 <body>
   <div class="container-fluid p-0">
     <!-- Main Navigation Bar -->
     <nav class="navbar navbar-expand-lg custom-navbar">
       <div class="logo-container d-lg-flex align-items-center">
-        <img src="./Logo.gif" class="logo" alt="Logo">
+        <img style="width: 100px;" src="./Logo.gif" class="logo img-fluid" alt="Logo">
+
         <p class="name">Anika McPhee</p>
       </div>
       <button class="navbar-toggler" id="mobile-nav-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -212,7 +228,9 @@
          
           <h3>Revitalizing Compassion 
           </h3>
-          <img src="./RogerNeilson.png" style="width: 100%;">
+          <video controls style="width: 100%;">
+            <source src="revitalizing compassion mp4.mp4" type="video/mp4" ;>
+          </video>
           <p2 style="margin-left: 4%; margin-right: 4%;">  
             The project proposes the redesign of Roger Neilson House's webpage, a palliative care facility in Ottawa. User research, including interviews and surveys, was conducted to gather insights. Competitor analysis highlighted strengths in accessibility standards, but weaknesses were found in certain websites. Heuristic evaluation identified issues with images, contact information, page length, and font size. User perspectives, actions, feelings, and pain points were considered. The problem statement focused on saving user information to streamline the volunteer application process. Sketches were created, and the site map was adjusted to include an 'About Us' section. A UI style guide was developed based on user preferences. Next steps included incorporating features, adding a contact form, and improving accessibility.
           </p2>
@@ -228,7 +246,10 @@
             <div class="column-content" style="padding: 0 2%;"></div>
           <h3>Transforming The Digital Frontier
           </h3>
-            <img src="./Governmentofinteriors.png" style="width: 100%;">
+          <video controls style="width: 100%;">
+            <source src="./goimp4.mp4" type="video/mp4" ;>
+          </video>
+           <img src="./goi white.jpg;">
              <p style="margin-left: 4%; margin-right: 4%;"> The non-profit organization's website faced issues with cluttered navigation, outdated information, and limited resource access. Steps taken to address the problem included a heuristic analysis and usability testing. Insights led to a redesign of the information architecture, improvements in the footer design, and the creation of mockups and a UI style guide. The resulting solution aimed to provide a clearer purpose, intuitive navigation, and easier access to resources. Future steps involve finalizing prototypes and perfecting the footer design.
               </p>
         

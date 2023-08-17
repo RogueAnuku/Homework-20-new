@@ -58,15 +58,7 @@ text-align: center;
     /* Top bar styles */
   
     /* Logo styles */
-    .logo {
-      display: flex;
-      align-items: center;
-      
-    }
-    
-    
-        
-
+             
     .hero-heading {
     color: #FFF;
     font-family: 'Mulish', sans-serif;
@@ -257,8 +249,7 @@ body {
 
 .navigation-links a {
   color: white;
-  text-decoration: none;
-  font-size: 20px;
+
   font-weight: 600;
   padding: 10px;
   border-radius: 5px;
@@ -283,14 +274,7 @@ body {
     transform: translate(-50%, -50%);
     z-index: 1;
   }
-  .navigation-links .nav-link {
-    display: inline-block;
-    padding: 10px 10px; /* Adjust the padding as needed */
-    text-align: center;
-    font-size: 0.75rem;
-     /* Set a fixed width for the navigation links */
-    box-sizing: border-box; /* Ensure padding is included in the width */
-  }
+
   
   /* Your existing styles */
   
@@ -449,9 +433,6 @@ h4 {padding: 5%;
   border-radius: 1%;
 }
 
-
-
-
 .center-image img {
   z-index: 1;
   /* margin-top: -100px; */
@@ -578,7 +559,7 @@ h4 {padding: 5%;
 
 /* Apply general styles to the form and its elements */
 body {
-  background-color: white;
+  background-color: black;
   color: black; /* Set the text color to black */
 }
 .about-section {
@@ -589,9 +570,6 @@ body {
 .about-section:hover {
   transform: scale(1.05); /* Apply a slight zoom-in effect on hover */
 }
-
-
-
 
 
 .content-wrapper {
